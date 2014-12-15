@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@color/background_f5f5f5"
+    android:padding="10dp"
+    android:stretchColumns="1" >
+
+    <!-- sell -->
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 时间 "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/capital_stock_struct_date1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/capital_stock_struct_date2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <View
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" 
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginBottom="@dimen/space_5"
+        />
+    <!-- buy -->
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text="总股本(百万股)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/capital_stock_struct_total1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/capital_stock_struct_total2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text="流通A股(百万股)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/capital_stock_struct_circulating_volume1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/capital_stock_struct_circulating_volume2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text="限售股份(百万股)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/capital_circulating_limited_volume1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/capital_circulating_limited_volume2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+</TableLayout>

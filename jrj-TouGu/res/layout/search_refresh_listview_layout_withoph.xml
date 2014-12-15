@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_fail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!--
+             <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_net_error" />
+        -->
+
+        <TextView
+            android:id="@+id/net_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="0.5"
+            android:text="网络错误"
+            android:textColor="#B89966"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dip"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="0.5"
+            android:text="检查"
+            android:textColor="#B6B6B6"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_result"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/iv_no_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="没有结果"
+            android:textColor="#B6B6B6"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.gome.haoyuangong.views.xlistview.XListView
+        android:id="@+id/listView"
+        style="@style/BaseListView"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/space_13"
+        android:listSelector="@drawable/list_item_drawable_bg" />
+
+</RelativeLayout>

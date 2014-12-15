@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/headImageView1"
+            android:layout_width="56.67dip"
+            android:layout_height="56.67dip"
+            android:src="@drawable/icon111" />
+
+        <TextView
+            android:id="@+id/nameTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="张辛"
+            android:textColor="#595959"
+            android:textSize="14.7sp" />
+
+        <TextView
+            android:id="@+id/positionTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="中国证券"
+            android:textColor="#727272"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/headImageView2"
+            android:layout_width="56.67dip"
+            android:layout_height="56.67dip"
+            android:src="@drawable/icon111" />
+
+        <TextView
+            android:id="@+id/nameTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="张辛"
+            android:textColor="#595959"
+            android:textSize="14.7sp" />
+
+        <TextView
+            android:id="@+id/positionTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="中国证券"
+            android:textColor="#727272"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/headImageView3"
+            android:layout_width="56.67dip"
+            android:layout_height="56.67dip"
+            android:src="@drawable/icon111" />
+
+        <TextView
+            android:id="@+id/nameTextView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="张辛"
+            android:textColor="#595959"
+            android:textSize="14.7sp" />
+
+        <TextView
+            android:id="@+id/positionTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="中国证券"
+            android:textColor="#727272"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

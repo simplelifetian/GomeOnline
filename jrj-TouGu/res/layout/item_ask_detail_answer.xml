@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_13"
+        android:layout_marginLeft="@dimen/space_13"
+        android:layout_marginRight="@dimen/space_13"
+        android:layout_marginTop="@dimen/space_13" >
+
+        <ImageView
+            android:id="@+id/headpic"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="2dp"
+            android:src="@drawable/head_default" />
+
+        <RatingBar
+            android:id="@+id/rating_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ask_item_ly_name"
+            android:layout_toRightOf="@+id/ask_item_ly_name"
+            android:numStars="1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ask_item_ly_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/headpic"
+            android:layout_toRightOf="@+id/headpic"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/ask_item_tv_name"
+                style="@style/BaseTextView.ask.name"
+                android:layout_marginLeft="@dimen/space_5"
+                android:text="李家志" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_2"
+                android:src="@drawable/icon_v" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ask_item_tv_company"
+            style="@style/BaseTextView.ask.company"
+            android:layout_alignBottom="@+id/headpic"
+            android:layout_alignLeft="@+id/ask_item_ly_name"
+            android:layout_marginLeft="@dimen/space_5"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="中信证券" />
+
+        <TextView
+            android:id="@+id/ask_item_tv_time"
+            style="@style/BaseTextView.ask.time"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ask_item_ly_name"
+            android:text="10:54" />
+
+        <RelativeLayout
+            android:id="@+id/ask_item_rl_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ask_item_tv_company"
+            android:layout_below="@id/ask_item_tv_company"
+            android:layout_marginTop="@dimen/space_7" >
+
+            <TextView
+                android:id="@+id/ask_item_tv_answer"
+                style="@style/BaseTextView.ask.content"
+                android:text="买对股票只完成投资过程的一半或更少，接下来就是跟踪股票，并在股价大幅上涨之后卖掉股票，所以如何卖股票同样至关重要。" />
+
+            <include
+                android:id="@+id/ask_item_answer_voice"
+                layout="@layout/media_layout"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/BaseLayout"
+            android:layout_alignLeft="@id/ask_item_rl_answer"
+            android:layout_alignTop="@dimen/space_5"
+            android:layout_below="@id/ask_item_rl_answer"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ask_item_ly_again"
+                style="@style/BaseLayout"
+                android:background="@drawable/bg_ask_question"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_7"
+                android:paddingLeft="@dimen/space_7"
+                android:paddingRight="@dimen/space_13"
+                android:paddingTop="@dimen/space_13"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/ask_item_tv_qa"
+                    style="@style/BaseTextView.ask.qa"
+                    android:text="请问中粮地产啥价位出手谢谢啊请问中粮地产啥价位出手？谢谢啊" />
+
+                <LinearLayout
+                    style="@style/BaseLayout"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/ask_item_tv_qa_an"
+                        style="@style/BaseTextView.ask.qa"
+                        android:maxLines="2"
+                        android:text="请问中粮地产啥价位出手谢谢啊请问中粮地产啥价位出手？谢谢啊" />
+
+                    <include
+                        android:id="@+id/ask_item_qa_an_voice"
+                        layout="@layout/media_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ask_item_ly_web"
+                style="@style/BaseLayout"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/space_13"
+                android:paddingTop="@dimen/space_13"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/ask_item_tv_web"
+                    style="@style/BaseTextView.ask.qa"
+                    android:maxLines="1"
+                    android:text="查看图文详情" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ask_item_ly_rate"
+                style="@style/BaseLayout"
+                android:layout_marginTop="@dimen/space_13"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/space_13"
+                android:visibility="gone" >
+				<View 
+				    style="@style/Divider"/>
+                <TextView
+                    android:id="@+id/ask_item_tv_rate_content"
+                    style="@style/BaseTextView.ask.content"
+                    android:layout_marginTop="@dimen/space_7"
+                    android:text="地产啥价位出手谢谢啊请地产啥价位出手谢谢啊请地产啥价位出手谢谢啊请" />
+
+                <LinearLayout
+                    style="@style/BaseLayout"
+                    android:layout_marginTop="@dimen/space_7"
+                    android:gravity="center_vertical|right" >
+
+                    <TextView
+                        style="@style/BaseTextView.ask.answernum"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="评分："
+                        android:textSize="@dimen/text_size_14" />
+
+                    <RatingBar
+                        android:id="@+id/ask_item_rating"
+                        style="@style/commentRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:stepSize="1"
+                        android:max="5"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ask_item_ly_btn"
+        style="@style/BaseLayout"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:background="@color/list_divider_color" />
+
+        <LinearLayout style="@style/BaseLayout" >
+
+            <com.gome.haoyuangong.views.DrawableCenterTextView
+                android:id="@+id/ask_item_tv_askagain"
+                style="@style/BaseTextView.Clickable.item"
+                android:drawableLeft="@drawable/ask_more_button"
+                android:drawablePadding="@dimen/space_6"
+                android:enabled="false"
+                android:maxLines="1"
+                android:text="追问" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/space_3"
+                android:layout_marginTop="@dimen/space_3"
+                android:background="@color/list_divider_color" />
+
+            <com.gome.haoyuangong.views.DrawableCenterTextView
+                android:id="@+id/ask_item_tv_comment"
+                style="@style/BaseTextView.Clickable.item"
+                android:drawableLeft="@drawable/comment_button"
+                android:drawablePadding="@dimen/space_6"
+                android:enabled="false"
+                android:maxLines="1"
+                android:text="评价" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

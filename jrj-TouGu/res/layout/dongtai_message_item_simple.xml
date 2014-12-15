@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout.Clickable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/band_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_13"
+        android:background="@color/background_f0f0f0"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_1"
+        android:background="@color/list_divider_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_8"
+        android:gravity="center_vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40"
+                android:layout_margin="@dimen/space_4" />
+
+            <com.gome.haoyuangong.views.TipTextView
+                android:id="@+id/tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/shape_circle"
+                android:gravity="center"
+                android:paddingLeft="@dimen/space_2"
+                android:paddingRight="@dimen/space_2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_13"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/item_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="李家志"
+                    android:textColor="@color/font_454545"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/textViewContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7:30"
+                    android:textColor="@color/font_b2b2b2"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+	<View
+	    android:id="@+id/view2"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/divider_1"
+	    android:background="@color/list_divider_color" />
+
+</LinearLayout>

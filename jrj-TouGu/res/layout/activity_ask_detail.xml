@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/BaseLayout"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/ask_detail_list"
+            style="@style/BaseListView"
+            android:layout_height="match_parent"
+            android:divider="@color/divider_2"
+            android:dividerHeight="1px"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:id="@+id/ask_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:visibility="gone" >
+            <LinearLayout
+                style="@style/BaseLayout"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+			<include layout="@layout/item_ask_detail_qa"/>
+                <include layout="@layout/empty" >
+                </include>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/BaseLayout"
+        android:orientation="vertical" >
+
+        <View style="@style/Divider" />
+
+        <TextView
+            android:id="@+id/ask_tv_answer"
+            style="@style/BaseTextView.Clickable"
+            android:text="回答"
+            android:textColor="@color/font_4c86c6" />
+    </LinearLayout>
+
+</LinearLayout>

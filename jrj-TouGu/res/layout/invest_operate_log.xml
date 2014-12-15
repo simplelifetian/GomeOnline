@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp" >
+
+        <ImageView
+            android:id="@+id/headpic"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/icon111" />
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/headpic"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/headpic"
+            android:text="张家智"
+            android:textColor="@color/font_4c86c6"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/infotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/headpic"
+            android:layout_alignLeft="@+id/nametext"
+            android:layout_alignParentBottom="false"
+            android:text="广州证券  中信证券"
+            android:textColor="@color/font_b2b2b2"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tipView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/infotext"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:text="09-25 12:00"
+            android:textColor="@color/font_b2b2b2"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/infotext"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/infotext"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:text="周一大盘低开高走，大幅调整，三连阳反弹成果被吞噬一空，勉强收复的5日线、10日线和2300点关口再次失守！"
+            android:textColor="@color/font_727272"
+            android:textSize="@dimen/text_size_15" />
+
+        <ImageView
+            android:id="@+id/imageViewHead"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignBottom="@+id/nametext"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/nametext"
+            android:src="@drawable/icon_v" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MyitemList"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" 
+    android:paddingLeft="@dimen/space_13"
+    android:paddingRight="@dimen/space_13"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/space_40"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/item_text_code"
+            style="@style/BaseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000000"
+            android:textColor="#929292" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_text"
+            style="@style/BaseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_7"
+            android:paddingRight="@dimen/space_7"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="选项" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/item_text_code2"
+                style="@style/BaseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000000"
+                android:textColor="#929292"
+                android:visibility="invisible" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/item_imageplus"
+                android:layout_width="@dimen/space_20"
+                android:layout_height="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_5"
+                android:layout_alignRight="@+id/item_text_code2"
+                android:scaleType="fitCenter"
+                android:src="@drawable/item_querystock_add_selector" />
+
+            <TextView
+                android:id="@+id/item_textplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_alignRight="@+id/item_text_code2"
+                android:text="已添加"
+                android:textColor="@color/font_727272"
+                android:textSize="@dimen/text_size_15"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

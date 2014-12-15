@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_13" >
+
+        <TextView
+            android:id="@+id/yj_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2014-10-17 10:20"
+            android:textColor="@color/font_b2b2b2"
+            android:textSize="@dimen/text_size_16" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_13"
+            android:background="@drawable/shape_round_corner_white" >
+
+            <TextView
+                android:id="@+id/yj_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_10"
+                android:text="TextView"
+                android:textColor="@color/font_727272"
+                android:textSize="@dimen/text_size_16" />
+
+            <ImageView
+                android:id="@+id/yj_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_new" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

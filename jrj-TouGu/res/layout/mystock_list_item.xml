@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/space_13" 
+    android:paddingLeft="@dimen/space_0" 
+    android:paddingBottom="@dimen/space_10"
+    android:paddingTop="@dimen/space_10" 
+    android:background="@drawable/bottom_line">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/mystock_iv_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/temp_1"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/mystock_iv_market_space"
+            android:layout_width="@dimen/space_13"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/mystock_tv_name"
+            style="@style/BaseTextView"
+            android:layout_alignTop="@id/mystock_iv_market"
+            android:layout_marginLeft="@dimen/space_6"
+            android:layout_toRightOf="@id/mystock_iv_market"
+            android:text="西昌电力" />
+
+        <TextView
+            android:id="@+id/mystock_tv_code"
+            style="@style/BaseTextView"
+            android:layout_below="@id/mystock_tv_name"
+            android:layout_marginLeft="@dimen/space_6"
+            android:layout_toRightOf="@id/mystock_iv_market"
+            android:text="000001"
+            android:textColor="@color/font_8b8b8b"
+            android:textSize="@dimen/text_size_11" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mystock_tv_newprice"
+        style="@style/BaseTextView"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:gravity="right"
+        android:text="--" />
+
+    <TextView
+        android:id="@+id/mystock_tv_pl"
+        style="@style/BaseTextView"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:gravity="right"
+        android:text="--" />
+
+    <TextView
+        android:id="@+id/mystock_tv_hpl"
+        style="@style/BaseTextView"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:gravity="right"
+        android:text="--" />
+
+</LinearLayout>

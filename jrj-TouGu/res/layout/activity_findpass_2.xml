@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp" >
+
+    <RelativeLayout
+        style="@style/BaseLayout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/left1"
+            style="@style/BaseTextView"
+            android:layout_marginLeft="3dp"
+            android:text="您的金融界账号为：" />
+
+        <TextView
+            android:id="@+id/jrj_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/left1"
+            android:layout_weight="1"
+            android:textColor="@color/font_727272"
+            android:textSize="@dimen/base_text_size" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/passwd_lo"
+        style="@style/BaseLayout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/pass_label"
+            style="@style/BaseTextView"
+            android:layout_marginLeft="3dp"
+            android:text="设置密码：" />
+
+        <com.gome.haoyuangong.views.ClearEditText
+            android:id="@+id/passwd"
+            style="@style/BaseEditText"
+            android:layout_toRightOf="@id/pass_label"
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </com.gome.haoyuangong.views.ClearEditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/uname_lo"
+        style="@style/BaseLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/uname_lable"
+            style="@style/BaseTextView"
+            android:layout_marginLeft="3dp"
+            android:text="输入用户名：" />
+
+        <com.gome.haoyuangong.views.ClearEditText
+            android:id="@+id/et_uname"
+            style="@style/BaseEditText"
+            android:layout_toRightOf="@id/uname_lable"
+            android:inputType="text" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/finish"
+        style="@style/BaseButton"
+        android:layout_marginTop="27dp"
+        android:text="完成" />
+
+</LinearLayout>

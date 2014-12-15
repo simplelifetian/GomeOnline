@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/HorizontalWholeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="#EBEBEB"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/HStockNameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/app_text_black_color"
+                        android:textSize="@dimen/app_default_large_font_size" />
+
+                    <TextView
+                        android:id="@+id/HStockCodeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="--"
+                        android:textColor="@color/app_text_black_color"
+                        android:textSize="@dimen/app_default_mid_font_size" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/VStocksPriceLayout"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:id="@+id/HStocksPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/HStocksDiffTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dip"
+                        android:text="--"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/HStocksRangeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dip"
+                        android:text="--"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:orientation="horizontal">
+                  <LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="fill_parent"
+		                android:layout_weight="1"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal">
+		                <TextView
+		                  android:id="@+id/HStocksH1C1TitleTv"
+		                  android:layout_width="wrap_content"
+		                  android:layout_height="wrap_content"
+		                  android:text="高:"
+		                  android:textColor="@color/app_lable_text_color"
+		                  android:textSize="@dimen/stock_chart_H_mid_font" />
+										<TextView
+		                  android:id="@+id/HStocksH1C1Tv"
+		                  android:layout_width="wrap_content"
+		                  android:layout_height="wrap_content"
+		                  android:text="-"
+		                  android:textColor="@color/app_lable_text_color"
+		                  android:textSize="@dimen/stock_chart_H_mid_font" />		                
+	                </LinearLayout>
+                	<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="fill_parent"
+		                android:layout_weight="1"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal">
+										<TextView
+	                    android:id="@+id/HStocksH1C2TitleTv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="量:"
+	                    android:textColor="@color/app_lable_text_color"
+	                    android:textSize="@dimen/stock_chart_H_mid_font" />
+		                <TextView
+	                    android:id="@+id/HStocksH1C2Tv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center"
+	                    android:textColor="@color/app_lable_text_color"
+	                    android:textSize="@dimen/stock_chart_H_mid_font" /> 
+	                </LinearLayout>
+									
+                  <LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="fill_parent"
+		                android:layout_weight="1"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal">
+		                <TextView
+	                    android:id="@+id/HStocksH1C3TitleTv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="开:"
+	                    android:textColor="@color/app_lable_text_color"
+	                    android:textSize="@dimen/stock_chart_H_mid_font" />
+		                <TextView
+	                    android:id="@+id/HStocksH1C3Tv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center"
+	                    android:textColor="@color/app_lable_text_color"
+	                    android:textSize="@dimen/stock_chart_H_mid_font" />  
+	                </LinearLayout>             	
+            		</LinearLayout>
+								<LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:orientation="horizontal">
+									<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="fill_parent"
+		                android:layout_weight="2"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal">
+		                <TextView
+	                    android:id="@+id/HStocksH2C1TitleTv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center"
+	                    android:text="低:"
+	                    android:textColor="@color/app_lable_text_color"
+	                    android:textSize="@dimen/stock_chart_H_mid_font" /> 
+		                <TextView
+	                    android:id="@+id/HStocksH2C1Tv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center"
+	                    android:textColor="@color/app_lable_text_color"
+	                    android:textSize="@dimen/stock_chart_H_mid_font" /> 
+	                </LinearLayout>                   
+                	
+                  <TextView
+                        android:id="@+id/HStocksH2C2Tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="--"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/app_lable_text_color"
+                        android:textSize="@dimen/stock_chart_H_mid_font" />
+            		</LinearLayout>            		
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HChartWholeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_marginBottom="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/HBottomTabTextView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/stock_chart_left"
+                android:gravity="center"
+                android:text="分时 "
+                android:textColor="#000000"
+                android:layout_marginLeft="5dip"
+                android:textSize="@dimen/app_default_mid_font_size" />
+
+            <TextView
+                android:id="@+id/HBottomTabTextView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/stock_chart_bg"
+                android:gravity="center"
+                android:text="日K"
+                android:textColor="#000000"
+                android:textSize="@dimen/app_default_mid_font_size" />
+
+            <TextView
+                android:id="@+id/HBottomTabTextView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/stock_chart_bg"
+                android:gravity="center"
+                android:text="周K"
+                android:textColor="#000000"
+                android:textSize="@dimen/app_default_mid_font_size" />
+
+            <TextView
+                android:id="@+id/HBottomTabTextView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/stock_chart_bg"
+                android:gravity="center"
+                android:text="月K"
+                android:textColor="#000000"
+                android:textSize="@dimen/app_default_mid_font_size" />
+
+            <TextView
+                android:id="@+id/HBottomTabTextView5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/stock_chart_bg"
+                android:gravity="center"
+                android:text="5分钟"
+                android:textColor="#000000"
+                android:textSize="@dimen/app_default_mid_font_size" />
+
+            <TextView
+                android:id="@+id/HBottomTabTextView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/stock_chart_bg"
+                android:gravity="center"
+                android:text="30分钟"
+                android:textColor="#000000"
+                android:textSize="@dimen/app_default_mid_font_size" />
+
+            <TextView
+                android:id="@+id/HBottomTabTextView7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/stock_chart_bg"
+                android:gravity="center"
+                android:text="60分钟"
+                android:textColor="#000000"
+                android:textSize="@dimen/app_default_mid_font_size" />
+
+            <TextView
+                android:id="@+id/HBottomTabTextView8"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="VOL"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:textSize="@dimen/app_default_mid_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/VerticalWholeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <!--  <include layout="@layout/title_layout" />-->
+        <com.jrj.myviews.MyFootListView
+            android:id="@+id/stocklist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            />
+        <!-- <include layout="@layout/stocks_bottom_layout" />-->
+    </LinearLayout>
+    <LinearLayout
+	    android:id="@+id/guideLayout"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone"
+	    >
+    </LinearLayout>
+
+</RelativeLayout>

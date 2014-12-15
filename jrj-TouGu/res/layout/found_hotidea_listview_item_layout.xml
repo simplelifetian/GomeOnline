@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout.Clickable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/space_13" 
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/headpic"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/head_default" 
+            android:padding="4dp"/>
+
+        <LinearLayout
+            android:id="@+id/ask_item_ly_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/headpic"
+            android:layout_toRightOf="@+id/headpic"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/ask_item_tv_name"
+                style="@style/BaseTextView.ask.name"
+                android:layout_marginLeft="@dimen/space_5"
+                android:text="李家志" 
+                />
+
+            <ImageView
+                android:id="@+id/ask_item_IvV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_v" 
+                android:layout_marginLeft="@dimen/space_2"
+                />
+
+            <RatingBar
+                android:id="@+id/rating_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="1"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ask_item_tv_company"
+            style="@style/BaseTextView.ask.company"
+            android:layout_alignBottom="@+id/headpic"
+            android:layout_alignLeft="@+id/ask_item_ly_01"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/space_5"
+            android:text="中信证券" />
+
+        <TextView
+            android:id="@+id/ask_item_tv_time"
+            style="@style/BaseTextView.ask.time"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ask_item_ly_01"
+            android:layout_marginRight="@dimen/space_7"
+            android:text="10:54" 
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/ask_item_tv_talk_button"
+            android:layout_width="@dimen/space_65"
+            android:layout_height="@dimen/space_22"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/ask_item_tv_company"
+            android:src="@drawable/android_icon_talk" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ask_item_ly_answer"
+            android:layout_below="@+id/ask_item_ly_answer" 
+            android:paddingTop="@dimen/space_7">
+
+            <TextView
+                android:id="@+id/ask_item_tv_answer"
+                style="@style/BaseTextView.ask.content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="买对股票只完成投资过程的一半或更少，接下来就是跟踪股票，并在股价大幅上涨之后卖掉股票，所以如何卖股票同样至关重要。" />
+
+            <include 
+                android:id="@+id/ask_item_tv_answer_media"
+                layout="@layout/media_layout"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ask_item_ly_answer"
+            style="@style/BaseLayout"
+            android:layout_alignLeft="@id/ask_item_tv_company"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_below="@id/ask_item_tv_company"
+            android:background="@drawable/shape_round_corner"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_3"
+            android:paddingLeft="@dimen/space_7"
+            android:paddingRight="@dimen/space_7"
+            android:paddingTop="@dimen/space_7" >
+
+            <LinearLayout style="@style/BaseLayout" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_ask" />
+
+                <TextView
+                    android:id="@+id/ask_item_tv_qa"
+                    style="@style/BaseTextView.ask.qa"
+                    android:layout_marginLeft="@dimen/space_7"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="请问中粮地产啥价位出手谢谢啊请问中粮地产啥价位出手？谢谢啊" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ask_item_tv_answercount"
+                style="@style/BaseTextView.ask.answernum"
+                android:layout_gravity="right"
+                android:text="3人回答" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

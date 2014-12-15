@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_transparent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tipView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="您今日还剩1条消息可群发给15位签约用户"
+                    android:textSize="@dimen/text_size_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/background_727272" >
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/evaluateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="2014-10-23 21:15"
+                    android:textSize="@dimen/text_size_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_f0f0f0"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_reply"
+                    style="@style/BaseEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:layout_marginRight="@dimen/space_13"
+                    android:layout_marginTop="@dimen/space_13"
+                    android:layout_weight="0"
+                    android:background="@drawable/shape_round_corner_white_stroke"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="请输入您的群发信息"
+                    android:minHeight="@dimen/space_120"
+                    android:padding="@dimen/space_13"
+                    android:textColorHint="@color/font_b2b2b2" >
+
+                    <requestFocus />
+                </EditText>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:layout_marginRight="@dimen/space_13"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_weight="0" >
+
+                    <ImageView
+                        android:id="@+id/imageView_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:src="@drawable/icon_opinion_stock" />
+
+                    <Button
+                        android:id="@+id/bt_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/selector_button_answer"
+                        android:paddingBottom="@dimen/space_5"
+                        android:paddingLeft="@dimen/space_15"
+                        android:paddingRight="@dimen/space_15"
+                        android:paddingTop="@dimen/space_5"
+                        android:text="群发消息"
+                        android:textColor="@drawable/selector_button_answer" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

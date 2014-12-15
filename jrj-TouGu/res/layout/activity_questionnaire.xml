@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="第一题"
+                    android:textColor="#4c87c6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="/共三题"
+                    android:textColor="#595959" />
+            </LinearLayout>
+            -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/background_f5f5f5"
+                android:gravity="center_vertical"
+                android:paddingBottom="14dip"
+                android:paddingLeft="14dip"
+                android:paddingTop="14dip"
+                android:text="为了向您推荐合适的投顾，请完成以下答卷。\n(共三题)"
+                android:textColor="#595959"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dip"
+                android:text="1、您炒股（关注）股票多久了？"
+                android:textColor="#4c87c6"
+                android:textSize="16sp" />
+
+            <!--
+                 <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/background_f5f5f5" />
+            -->
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" >
+
+                <RadioButton
+                    android:id="@+id/oneRadio"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="A 出神入化（10年及其以上）" />
+
+                <!--
+                     <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/background_f5f5f5" />
+                -->
+
+                <RadioButton
+                    android:id="@+id/twoRadio"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="B 自成一派（5~10年）" />
+
+                <!--
+                     <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/background_f5f5f5" />
+                -->
+
+                <RadioButton
+                    android:id="@+id/threeRadio"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="C 炉火纯青（3~5年）" />
+
+                <!--
+                     <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/background_f5f5f5" />
+                -->
+
+                <RadioButton
+                    android:id="@+id/fourRadio"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="D 略有小成（1年~3年）" />
+                <!--
+                     <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/background_f5f5f5" />
+                -->
+
+                <RadioButton
+                    android:id="@+id/fiveRadio"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="E 初出茅庐（1年及其以下）" />
+            </RadioGroup>
+
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="第二题"
+                    android:textColor="#4c87c6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="/共三题"
+                    android:textColor="#595959" />
+            </LinearLayout>
+            -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="14dip"
+                android:background="@color/background_f5f5f5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dip"
+                android:text="2、您通常用（准备用）多少钱来炒股？"
+                android:textColor="#4c87c6"
+                android:textSize="16sp" />
+
+            <!--
+                 <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/background_f5f5f5" />
+            -->
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" >
+
+                <RadioButton
+                    android:id="@+id/oneRadio2"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="A “财”智多谋（500万以上）" />
+
+                <!--
+                     <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/background_f5f5f5" />
+                -->
+
+                <RadioButton
+                    android:id="@+id/twoRadio2"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="B 大刀阔斧（100万~500万）" />
+
+                <!--
+                     <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/background_f5f5f5" />
+                -->
+
+                <RadioButton
+                    android:id="@+id/threeRadio2"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="C 屡试不爽（50万~100万）" />
+
+                <!--
+                     <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/background_f5f5f5" />
+                -->
+
+                <RadioButton
+                    android:id="@+id/fourRadio2"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="D小试牛刀（5万~50万）" />
+                <!--
+                     <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/background_f5f5f5" />
+                -->
+
+                <RadioButton
+                    android:id="@+id/fiveRadio2"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="E 浅尝辄止（5万以下）" />
+            </RadioGroup>
+
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="第三题"
+                    android:textColor="#4c87c6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="/共三题"
+                    android:textColor="#595959" />
+            </LinearLayout>
+            -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="14dip"
+                android:background="@color/background_f5f5f5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dip"
+                android:text="3、您如何看待风险与收益关系？"
+                android:textColor="#4c87c6"
+                android:textSize="16sp" />
+
+            <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/background_f5f5f5" /> -->
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" >
+
+                <RadioButton
+                    android:id="@+id/oneRadio3"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="A 无风险，不收益" />
+
+                <!--
+                     <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/background_f5f5f5" />
+                -->
+
+                <RadioButton
+                    android:id="@+id/twoRadio3"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="B 输赢，乃股市常情" />
+
+                <!--
+                     <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/background_f5f5f5" />
+                -->
+
+                <RadioButton
+                    android:id="@+id/threeRadio3"
+                    style="@style/BaseRidoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/choicebutton_bg"
+                    android:drawablePadding="6dip"
+                    android:gravity="center"
+                    android:text="C 保本、稳定、偏高收益，定是极好的" />
+
+                <!--
+                     <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="14dip"
+                    android:background="@color/background_f5f5f5" />
+                -->
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dip"
+                android:layout_marginTop="30dip"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp" >
+
+                <Button
+                    android:id="@+id/btnnext"
+                    style="@style/BaseButton"
+                    android:layout_marginTop="12dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="获取推荐投顾" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.gome.haoyuangong.views.xlistview.XListView
+        android:id="@+id/listView"
+        style="@style/BaseListView"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/space_13"
+        android:listSelector="@drawable/list_item_drawable_bg"
+        android:visibility="gone" />
+
+</RelativeLayout>

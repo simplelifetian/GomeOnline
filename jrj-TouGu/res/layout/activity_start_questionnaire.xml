@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_f5f5f5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dip"
+        android:layout_marginLeft="41dip"
+        android:layout_marginRight="41dip"
+        android:layout_marginTop="35dip"
+        android:text="亲，为了您在i投顾中得到更贴身的投顾服务，请先告知我们您的投资类型相关信息，我们将依据该信息，为您匹配最合适的投顾。"
+        android:textColor="#727272"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_f5f5f5"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp" >
+
+        <Button
+            android:id="@+id/btnnext"
+            style="@style/BaseButton"
+            android:layout_marginTop="12dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="进入 问卷" />
+    </LinearLayout>
+
+</LinearLayout>

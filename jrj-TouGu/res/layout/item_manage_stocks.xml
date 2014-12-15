@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/stocklist_item_height"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/item_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/state"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:focusable="false"
+                android:src="@drawable/delete_icon" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/stocklist_firstCol_wid"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" 
+                android:layout_marginLeft="@dimen/space_10">
+
+                <TextView
+                    android:id="@+id/item_text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text=""
+                    android:singleLine="true"
+                    android:textColor="@color/quote_name_color"
+                    android:textSize="@dimen/app_default_mid_font_size" />
+
+                <TextView
+                    android:id="@+id/item_text_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/item_text_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/item_text_name"
+                    android:textColor="@color/quote_code_color"
+                    android:textSize="@dimen/app_default_small_font_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/ringIV"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:id="@+id/item_textplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:minEms="3"
+                    android:text="已预警"
+                    android:textColor="@color/app_lable_text_color"
+                    android:textSize="@dimen/app_default_small_font_size"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/move_upIV"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:focusable="false"
+                    android:src="@drawable/move_up_selector" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/movingIV"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="6dip"
+                    android:focusable="false"
+                    android:src="@drawable/move_icon" />
+
+                <TextView
+                    android:id="@+id/deleteStockTv1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#FF3B2F"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_default_small_font_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/deleteStockTv"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#FF3B2F"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_default_small_font_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp" 
+        android:gravity="center_horizontal">
+
+        <TextView
+            style="@style/BaseTextView"
+            android:text="@string/regist2_tip"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/font_b2b2b2" />
+        <TextView
+            android:id="@+id/regist2_text_tel_num"
+            style="@style/BaseTextView"
+            android:text=""
+            android:textSize="@dimen/text_size_19"
+            android:textColor="@color/font_4c86c6" 
+            android:layout_marginTop="@dimen/space_13"/>
+
+        <LinearLayout
+            style="@style/BaseLayout"
+            android:background="@drawable/bottom_line"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="@dimen/space_30"
+            android:paddingLeft="@dimen/space_4" 
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/igid_date"
+                style="@style/BaseTextView"
+                android:text="验证码" />
+
+            <com.gome.haoyuangong.views.ClearEditText
+                android:id="@+id/check_num"
+                style="@style/BaseEditText"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_5"
+                android:hint="请输入验证码"
+                android:inputType="phone" />
+             <TextView
+                android:id="@+id/get_vcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_get_vcode"
+                android:padding="5dp"
+                android:text="重新获取"
+                android:textColor="@drawable/selector_get_vcode" 
+                android:textSize="@dimen/text_size_13"
+                android:gravity="center"
+                android:minEms="5"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/BaseButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space_27"
+            android:text="下一步" />
+
+    </LinearLayout>
+
+</ScrollView>

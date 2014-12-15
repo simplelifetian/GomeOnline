@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/firstanswerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:id="@+id/mainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e9e9e9"
+                android:orientation="vertical"
+                android:paddingBottom="1px" >
+
+                <RelativeLayout
+                    android:id="@+id/layoutheader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+
+                    <ImageView
+                        android:id="@+id/imageViewHead"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="13dp"
+                        android:padding="3dp"
+                        android:src="@drawable/icon111" />
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/imageViewHead"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toRightOf="@+id/imageViewHead"
+                        android:text="美丽"
+                        android:textColor="@color/font_4c87c6"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textViewName"
+                        android:layout_alignBottom="@+id/textViewName"
+                        android:layout_toRightOf="@+id/textViewName"
+                        android:text="问:"
+                        android:textColor="@color/font_727272"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <TextView
+                        android:id="@+id/textCompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageViewHead"
+                        android:layout_alignLeft="@+id/textViewName"
+                        android:layout_alignParentBottom="false"
+                        android:layout_below="@+id/textViewName"
+                        android:gravity="bottom"
+                        android:text="09-20 14:20"
+                        android:textColor="#b3b3b3"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/textViewAnswer"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView2"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/roundcorner_answeredit"
+                        android:gravity="center"
+                        android:text="回答"
+                        android:textColor="@color/font_4c87c6"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginTop="7dp" >
+
+                        <TextView
+                            android:id="@+id/textViewContent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="13dp"
+                            android:ellipsize="end"
+                            android:maxLines="3"
+                            android:text="发的发生的发生的方式发送到发送到发送到"
+                            android:textColor="@color/font_595959"
+                            android:textSize="@dimen/text_size_14" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="14dp"
+                                    android:gravity="right"
+                                    android:text="3人回答"
+                                    android:textColor="#b3b3b3"
+                                    android:textSize="@dimen/text_size_12" />
+                            </LinearLayout>                    
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginTop="7dp"
+                        android:background="#e9e9e9"
+                        android:visibility="visible" >
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginLeft="56dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/againAnswerView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="fdfdfds"
+                            android:textColor="@color/font_595959"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <include
+                            android:id="@+id/ask_adviser_media1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            layout="@layout/media_layout"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="visible" >
+
+                    <RelativeLayout
+                        android:id="@+id/asklayout"
+                        style="@style/BaseTextView.ask.qa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginRight="13dp"
+                        android:background="@drawable/shape_round_corner"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:paddingTop="3dp" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp"
+                            android:src="@drawable/icon_ask" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/imageView1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/srcaskText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TextView"
+                                android:textColor="@color/font_595959"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="2dp"
+                                    android:gravity="right"
+                                    android:text="3人回答"
+                                    android:textColor="#b3b3b3"
+                                    android:textSize="@dimen/text_size_12" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/againAskView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginTop="14dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="TextView"
+                        android:textColor="@color/font_595959"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="14dp"
+                        android:visibility="visible" >
+
+                        <include
+                            android:id="@+id/ask_adviser_media2"
+                            layout="@layout/media_layout"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/evaluatelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/evaluateTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="56dp"
+                            android:text="评价："
+                            android:textColor="@color/font_595959"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center_vertical" >
+
+                            <TextView
+                                android:id="@+id/textView33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="评分："
+                                android:textColor="#b3b3b3" />
+
+                            <RatingBar
+                                android:id="@+id/ratingBar"
+                                style="@style/commentRatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="14dp"
+                                android:isIndicator="true"
+                                android:stepSize="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:background="@color/white"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="56dp"
+                        android:text="点击查看网页版详情"
+                        android:textColor="#b3b3b3"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+</LinearLayout>

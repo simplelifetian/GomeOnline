@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayout.Clickable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/opinion_ly_whole">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_1"
+        android:background="@color/list_divider_color"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_8" >
+
+            <include layout="@layout/user_header_layout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_12"
+                android:layout_marginTop="@dimen/space_12" >
+
+                <TextView
+                    android:id="@+id/opinion_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_40"
+                    android:drawablePadding="@dimen/space_7"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="会买是银，会卖是金会买是银，会卖是金会买是银，会卖是金会买是银，会卖是金"
+                    android:textColor="@color/font_595959"
+                    android:textSize="@dimen/text_size_15" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_13"
+                android:layout_marginLeft="@dimen/space_40"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/opinion_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="买对股票只完成投资过程的一半或更少，接下来就是跟踪股票，并在股价大幅上涨之后卖掉股票，所以如何卖股票同样至关重要。俗话说：会买是银，..."
+                    android:textColor="@color/font_727272"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/op_images_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/space_13"
+                android:layout_marginLeft="@dimen/space_40" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/op_image_1"
+                        android:layout_width="@dimen/space_66"
+                        android:layout_height="@dimen/space_66" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/op_image_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/op_image_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/icon_zan"
+                    android:drawablePadding="@dimen/space_7"
+                    android:text="0"
+                    android:textColor="@color/font_b2b2b2"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:layout_toLeftOf="@id/support"
+                    android:drawableLeft="@drawable/icon_comment"
+                    android:drawablePadding="@dimen/space_7"
+                    android:text="0"
+                    android:textColor="@color/font_b2b2b2"
+                    android:textSize="@dimen/text_size_12" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/opinion_mi" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_1"
+        android:background="@color/divider_2" />
+
+    <View
+        android:id="@+id/band_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_13"
+        android:background="@color/background_f0f0f0"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@color/background_f5f5f5"
+    android:padding="10dp"
+    android:stretchColumns="1" >
+
+    <!-- sell -->
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 时间 "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/stock_holder_count_date1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/stock_holder_count_date2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+           android:textSize="@dimen/text_size_14" />
+    </TableRow>
+
+    <View
+        android:layout_height="1px"
+        android:background="@color/list_divider_color"
+        android:layout_marginTop="@dimen/space_5"
+		android:layout_marginBottom="@dimen/space_5" />
+    <!-- buy -->
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text="股东数(户)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/stock_holder_count_num1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/stock_holder_count_num2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="@dimen/text_size_14" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text="人均持股(股)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/stock_holder_count_average1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/stock_holder_count_average2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="@dimen/text_size_14" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text="较上期变动(%)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/stock_holder_count_change1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/stock_holder_count_change2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="@dimen/text_size_14" />
+    </TableRow>
+
+</TableLayout>

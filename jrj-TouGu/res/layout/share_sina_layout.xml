@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gome.haoyuangong.views.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/write_opinion_bottom"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/share_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="分享内容"
+                android:inputType="textMultiLine"
+                android:maxLength="500"
+                android:padding="@dimen/space_13"
+                android:textColor="@color/font_727272"
+                android:textColorHint="@color/font_b2b2b2"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/write_opinion_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/space_13" >
+
+            <TextView
+                android:id="@+id/tv_char_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="@color/font_727272"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.gome.haoyuangong.views.KeyboardLayout>

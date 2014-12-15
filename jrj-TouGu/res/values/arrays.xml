@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string-array name="f10_group">
+
+		<item>最新股本 </item>
+		<item>最新指标 </item>
+		<item>业绩预告 </item>
+		<item>预约披露 </item>
+		<item>分红送配 </item>
+		<item>最新公告 </item>
+		<item>控盘情况 </item>
+		<item>十大股东 </item>
+		<item>十大流通股东 </item>
+		<item>机构持股 </item>
+	</string-array>
+
+
+	<string-array name="f10_req_ids">
+		<item>8045</item>
+		<item>8046</item>
+		<item>8047</item>
+		<item>8048</item>
+		<item>8049</item>
+		<item>8050</item>
+		<item>8051</item>
+		<item>8052</item>
+		<item>8053</item>
+		<item>8054</item>
+	</string-array>
+
+</resources>

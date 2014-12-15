@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android1:padding="0dp" >
+
+    <LinearLayout
+        android1:layout_width="match_parent"
+        android1:layout_height="match_parent"
+        android1:layout_marginLeft="20dp"
+        android1:layout_marginRight="20dp"
+        android1:gravity="center"
+        android1:orientation="vertical" >
+
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:background="@drawable/shape_round_corner_white_stroke"
+            android1:orientation="vertical" >
+
+            <LinearLayout
+                android1:layout_width="match_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_marginBottom="3dp"
+                android1:layout_marginLeft="5dp"
+                android1:layout_marginRight="5dp"
+                android1:layout_marginTop="3dp"
+                android1:background="@color/white"
+                android1:orientation="vertical" >
+
+                <TextView
+                    android1:id="@+id/title"
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="40.0dip"
+                    android1:background="@color/white"
+                    android1:gravity="center"
+                    android1:text="提示"
+                    android1:textColor="@color/font_595959"
+                    android1:textSize="@dimen/text_size_18"
+                    android1:visibility="visible" />
+
+                <View
+                    android1:id="@+id/view1"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="@dimen/divider_1"
+                    android1:background="#ffd0d0d0" />
+
+                <TextView
+                    android1:id="@+id/message"
+                    android1:layout_width="match_parent"
+                    android1:layout_height="wrap_content"
+                    android1:gravity="left|center"
+                    android1:lineSpacingMultiplier="1.5"
+                    android1:minHeight="120.0dip"
+                    android1:paddingBottom="15.0dip"
+                    android1:paddingLeft="20.0dip"
+                    android1:paddingRight="20.0dip"
+                    android1:paddingTop="15.0dip"
+                    android1:textColor="@color/font_727272"
+                    android1:textSize="@dimen/text_size_18" />
+
+                <LinearLayout
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="50dp"
+                    android1:layout_gravity="bottom"
+                    android1:background="#ffd0d0d0"
+                    android1:gravity="center"
+                    android1:orientation="horizontal" >
+
+                    <Button
+                        android1:id="@+id/negativeButton"
+                        android1:layout_width="match_parent"
+                        android1:layout_height="match_parent"
+                        android1:layout_marginTop="@dimen/divider_1"
+                        android1:layout_weight="1"
+                        android1:background="@color/white"
+                        android1:gravity="center"
+                        android1:text="取消"
+                        android1:textColor="@color/font_4c87c6"
+                        android1:textSize="@dimen/text_size_18" />
+
+                    <Button
+                        android1:id="@+id/positiveButton"
+                        android1:layout_width="match_parent"
+                        android1:layout_height="match_parent"
+                        android1:layout_marginLeft="@dimen/divider_1"
+                        android1:layout_marginTop="@dimen/divider_1"
+                        android1:layout_weight="1"
+                        android1:background="@color/white"
+                        android1:gravity="center"
+                        android1:text="查看"
+                        android1:textColor="@color/font_4c87c6"
+                        android1:textSize="@dimen/text_size_18" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+  
+</FrameLayout>

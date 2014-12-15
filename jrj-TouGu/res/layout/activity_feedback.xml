@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="top|center_vertical"
+            android:hint="请写下您的宝贵意见，我们会及时处理"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="14dp"
+            android:textColor="@color/font_cccccc"
+            android:textColorHint="@color/font_c0c0c0"
+            android:textSize="@dimen/text_size_17" />
+
+        <EditText
+            android:id="@+id/feedback_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="请留下您的联系方式"
+            android:padding="14dp"
+            android:textColor="@color/font_cccccc"
+            android:textColorHint="@color/font_c0c0c0"
+            android:textSize="@dimen/text_size_17" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/feedback_submit"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/font_dd3030"
+                android:textSize="@dimen/text_size_17" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

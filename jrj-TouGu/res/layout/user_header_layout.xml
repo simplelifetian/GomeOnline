@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="@dimen/space_33"
+                    android:layout_height="@dimen/space_33"
+                    android:src="@drawable/icon_head_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/space_7" >
+
+                    <LinearLayout
+                        android:id="@+id/name_wrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="李家志"
+                            android:textColor="@color/font_4c86c6"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <ImageView
+                            android:id="@+id/iv_certif"
+                            android:layout_width="@dimen/space_18"
+                            android:layout_height="@dimen/space_18"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:src="@drawable/icon_certification"
+                            android:visibility="gone" />
+
+                        <RatingBar
+                            android:id="@+id/ratingBar1"
+                            style="@style/commentRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_14"
+                            android:isIndicator="true"
+                            android:numStars="3"
+                            android:progressDrawable="@drawable/icon_user_level"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/user_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/font_c30114"
+                            android:textSize="@dimen/text_size_14"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="24分钟前"
+                            android:textColor="@color/font_b2b2b2"
+                            android:textSize="@dimen/text_size_12" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/name_wrapper"
+                        android:layout_marginTop="@dimen/space_3" >
+
+                        <TextView
+                            android:id="@+id/user_role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="投资顾问"
+                            android:textColor="@color/font_b2b2b2"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <TextView
+                            android:id="@+id/user_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13dp"
+                            android:text="中信证券"
+                            android:textColor="@color/font_b2b2b2"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+</LinearLayout>

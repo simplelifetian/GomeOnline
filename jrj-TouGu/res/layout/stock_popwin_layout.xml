@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#86b6e5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/stockPopWinR1C1Item"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/stockPopWinR1C1Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3686d6"
+                android:text="VOL"
+                android:textSize="@dimen/app_default_mid_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/stockPopWinR1C2Item"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/stockPopWinR1C2Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3686d6"
+                android:text="MACD"
+                android:textSize="@dimen/app_default_mid_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/stockPopWinR1C3Item"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/stockPopWinR1C3Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3686d6"
+                android:text="RSI"
+                android:textSize="@dimen/app_default_mid_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#86b6e5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/stockPopWinR2C1Item"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/stockPopWinR2C1Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3686d6"
+                android:text="KDJ"
+                android:textSize="@dimen/app_default_mid_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/stockPopWinR2C2Item"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/stockPopWinR2C2Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3686d6"
+                android:text=""
+                android:textSize="@dimen/app_default_mid_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/stockPopWinR2C3Item"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/stockPopWinR2C3Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3686d6"
+                android:text="BOLL"
+                android:textSize="@dimen/app_default_mid_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#86b6e5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/stockPopWinR3C1Item"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/stockPopWinR3C1Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3686d6"
+                android:text="VR"
+                android:textSize="@dimen/app_default_mid_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/stockPopWinR3C2Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3686d6"
+                android:textSize="@dimen/app_default_mid_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/stockPopWinR3C3Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3686d6"
+                android:textSize="@dimen/app_default_mid_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#86b6e5" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#86b6e5" />
+</LinearLayout>

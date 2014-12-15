@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@color/background_f5f5f5"
+    android:padding="10dp"
+    android:stretchColumns="1" >
+
+    <!-- sell -->
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 时间 "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_date1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_date2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <View
+        android:layout_height="1px"
+        android:background="@color/list_divider_color"
+        android:layout_marginTop="@dimen/space_5" 
+        android:layout_marginBottom="@dimen/space_5" 
+        />
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 券商持仓 "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_securities_company_num1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_securities_company_num2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 占流通股比例 (%)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_securities_company_rate1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_securities_company_rate2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 基金持仓 "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_fund_num1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_fund_num2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 占流通股比例(%) "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_fund_rate1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_fund_rate2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" QFII持仓 "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_qfii_num1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_qfii_num2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 占流通股比例 (%)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_qfii_rate1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_qfii_rate2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 社保机构持仓 "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_social_security_num1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_social_security_num2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 占流通股比例 (%)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_social_security_rate1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_social_security_rate2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 保资机构持仓 "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_insurance_num1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_insurance_num2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 占流通股比例(%) "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_insurance_rate1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_insurance_rate2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 持仓总计 "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_total_num1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_total_num2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 占流通股比例 (%)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_total_rate1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/jgcg_total_rate2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+</TableLayout>

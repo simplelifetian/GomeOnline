@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/layoutheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/layout1"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/textViewContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="发的发生的发生的方式发送到发送到发送到"
+                    android:textColor="@color/font_595959"
+                    android:textSize="@dimen/text_size_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" >
+
+                <TextView
+                    android:id="@+id/evaluateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="我问"
+                    android:textColor="@color/font_727272"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/evaluateTextView"
+                    android:textColor="@color/font_4c87c6"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/textCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="14dp"
+                    android:text="09-20 14:20"
+                    android:textColor="#b3b3b3"
+                    android:textSize="@dimen/text_size_12" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

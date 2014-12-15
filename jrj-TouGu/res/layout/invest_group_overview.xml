@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:text="组合表现"
+            android:textColor="@color/font_595959"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/headlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.gome.haoyuangong.views.MyViewPageIndicator
+            android:id="@+id/overview_indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_fafafa"
+            android:minHeight="@dimen/space_40" >
+        </com.gome.haoyuangong.views.MyViewPageIndicator>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/flaglayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/againAnswerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="7dp"
+            android:text="组合收益"
+            android:textColor="@color/font_727272"
+            android:textSize="@dimen/text_size_10" />
+
+        <TextView
+            android:id="@+id/lastedAnswerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/againAnswerView"
+            android:layout_below="@+id/againAnswerView"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="7dp"
+            android:text="沪深300"
+            android:textColor="@color/font_727272"
+            android:textSize="@dimen/text_size_10" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="11dp"
+            android:layout_height="3dp"
+            android:layout_alignBottom="@+id/againAnswerView"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/againAnswerView"
+            android:background="#fe7c05" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="11dp"
+            android:layout_height="3dp"
+            android:layout_alignBottom="@+id/lastedAnswerText"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/againAnswerView"
+            android:background="#229ff4" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="@color/white" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/overview_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginBottom="14dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/infotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:gravity="right"
+            android:text="18/11"
+            android:textColor="@color/font_595959"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:text="组合介绍"
+            android:textColor="@color/font_595959"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:text="组合介绍组合介绍组合介绍组合介绍组合介绍"
+            android:textColor="@color/font_727272"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+</LinearLayout>

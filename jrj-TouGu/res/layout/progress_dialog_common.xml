@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:gravity="center"
+    >
+    <ProgressBar 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@anim/frame_loading"
+        />
+    <TextView 
+        android:id="@+id/dialog_common_text"
+        style="@style/BaseTextView"
+        android:layout_marginTop="@dimen/space_10"
+        android:textColor="@color/font_b2b2b2"/>
+</LinearLayout>

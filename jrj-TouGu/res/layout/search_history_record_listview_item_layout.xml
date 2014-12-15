@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/search_history_record_listview_item_textview"
+        android:layout_width="match_parent"
+        android:layout_height="53.4dip"
+        android:layout_marginLeft="13.4dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center_vertical"
+        android:text="123123"
+        android:textColor="#999999"
+        android:maxLines="1" 
+        android:ellipsize="end"/>
+
+    <ImageView
+        android:id="@+id/more1"
+        android:layout_width="13.34dip"
+        android:layout_height="53.4dip"
+        android:paddingTop="19dip"
+        android:paddingBottom="18dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dip"
+        android:src="@drawable/right_arrow" 
+        android:gravity="center_vertical"/>
+
+</RelativeLayout>

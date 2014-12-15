@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_30"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_13"
+        android:paddingRight="@dimen/space_13" >
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="70dp"
+            android:layout_height="70dp" 
+            android:src="@drawable/head_default"
+            android:visibility="visible"/>
+
+        <TextView
+            style="@style/BaseTextView"
+            android:layout_marginTop="@dimen/space_13"
+            android:text="@string/regist3_tip"
+            android:textColor="@color/font_b2b2b2"
+            android:textSize="@dimen/text_size_15" 
+            android:visibility="visible"/>
+
+        <LinearLayout
+            style="@style/BaseLayout"
+            android:layout_marginTop="@dimen/space_0"
+            android:background="@drawable/bottom_line"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_4" 
+            android:paddingTop="@dimen/space_30">
+
+            <TextView
+                style="@style/BaseTextView"
+                android:text="用户名" />
+
+            <com.gome.haoyuangong.views.ClearEditText
+                android:id="@+id/name"
+                style="@style/BaseEditText"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_22"
+                android:hint="请输入用户名"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/BaseLayout"
+            android:layout_marginTop="@dimen/space_15"
+            android:background="@drawable/bottom_line"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_4" >
+
+            <TextView
+                style="@style/BaseTextView"
+                android:text="密码" />
+
+            <EditText
+                android:id="@+id/passwd"
+                style="@style/BaseEditText"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_40"
+                android:inputType="textPassword"
+                android:hint="登录密码" />
+            <CheckBox 
+                android:id="@+id/passwd_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="false"
+                android:background="@drawable/check_pw_selector"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/BaseButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space_27"
+            android:text="完成注册" />
+
+        <com.gome.haoyuangong.views.ClickTextView
+            android:id="@+id/auth_text"
+            style="@style/BaseTextView"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/space_18"
+            android:text="@string/regist3_auth"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+</ScrollView>

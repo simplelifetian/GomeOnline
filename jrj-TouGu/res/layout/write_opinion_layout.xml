@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/select_category_lo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_bg_listitem"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_13" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分类"
+                    android:textColor="@color/font_727272"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/category_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:drawableRight="@drawable/icon_more"
+                    android:text="选择分类"
+                    android:textColor="@color/font_4c86c6"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_1"
+                android:layout_weight="0"
+                android:background="@color/list_divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/op_title"
+                    style="@style/BaseEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="添加标题，3-50字之间"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_13"
+                    android:textColorHint="@color/font_b2b2b2" >
+
+                    <requestFocus />
+                </EditText>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_1"
+                    android:layout_weight="0"
+                    android:background="@color/list_divider_color" />
+
+                <EditText
+                    android:id="@+id/op_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="发布您的投资观点"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:padding="@dimen/space_13"
+                    android:textColor="@color/font_727272"
+                    android:textColorHint="@color/font_b2b2b2"
+                    android:textSize="@dimen/text_size_15" />
+
+                <include
+                    android:id="@+id/three_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/three_image_layout" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/mask_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/half_transparent"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/write_opinion_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/bottom_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_1"
+                    android:background="@color/divider" />
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_47"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/space_13"
+                    android:paddingRight="@dimen/space_13" >
+
+                    <CheckBox
+                        android:id="@+id/is_private"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkbox_button"
+                        android:text="该文章为私密"
+                        android:textColor="@color/background_727272"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/image_src"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/icon_opinion_pic"
+                        android:text="TextView" />
+
+                    <ImageView
+                        android:id="@+id/stock_src"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_30"
+                        android:layout_toLeftOf="@id/image_src"
+                        android:background="@drawable/icon_opinion_stock"
+                        android:text="TextView" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>

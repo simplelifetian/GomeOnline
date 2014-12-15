@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="37dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/igid_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="14dp"
+                android:text="品种一"
+                android:textColor="@color/font_595959"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/igid_name"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/igid_name"
+                android:text="(2014-10-20)"
+                android:textColor="@color/font_b2b2b2"
+                android:textSize="@dimen/text_size_12" />
+
+            <RelativeLayout
+                android:id="@+id/flaglayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@+id/igid_name"
+                android:layout_toRightOf="@+id/dateText" >
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" >
+
+                    <TextView
+                        android:id="@+id/editText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginTop="14dp"
+                        android:text="组合收益"
+                        android:textColor="@color/font_727272"
+                        android:textSize="@dimen/text_size_10" />
+
+                    <TextView
+                        android:id="@+id/editText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="false"
+                        android:layout_below="@+id/editText1"
+                        android:layout_marginRight="14dp"
+                        android:text="沪深300"
+                        android:textColor="@color/font_727272"
+                        android:textSize="@dimen/text_size_10" />
+
+                    <LinearLayout
+                        android:layout_width="10dp"
+                        android:layout_height="3dp"
+                        android:layout_alignBottom="@+id/editText1"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="7dp"
+                        android:background="#fe7c05" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="10dp"
+                        android:layout_height="3dp"
+                        android:layout_alignBottom="@+id/editText2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#229ff4" >
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/chartlayout"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginBottom="14dp"
+            android:orientation="horizontal"
+            android:tag="@color/white" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="27dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/chartdateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="11/18"
+                android:textColor="@color/font_727272"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/divider_2" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:background="@color/divider_2" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/editText3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="1dp"
+                                android:text="近一月收益"
+                                android:textColor="@color/font_727272"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <TextView
+                                android:id="@+id/editText31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginTop="7dp"
+                                android:text="25%"
+                                android:textColor="#32a632"
+                                android:textSize="@dimen/text_size_14" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/editText4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="1dp"
+                                android:text="交易频率"
+                                android:textColor="@color/font_727272"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <TextView
+                                android:id="@+id/editText41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginTop="7dp"
+                                android:text="5(W)"
+                                android:textColor="#de3031"
+                                android:textSize="@dimen/text_size_14" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/editText5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="风险水平(中)"
+                                android:textColor="@color/font_727272"
+                                android:textSize="@dimen/text_size_14" />
+
+                            <ImageView
+                                android:id="@+id/headpic"
+                                android:layout_width="48dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/icon_invest_m" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

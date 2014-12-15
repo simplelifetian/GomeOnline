@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_13"
+        android:background="@drawable/shape_round_corner_white"
+        android:orientation="vertical"
+        android:padding="@dimen/space_13" >
+
+        <EditText
+            android:id="@+id/share_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="@dimen/space_7"
+            android:inputType="textMultiLine"
+            android:text="会买是银，会卖是金会买是银，会卖是金会买是银，会卖是金会买是银，会卖是金"
+            android:textColor="@color/font_595959"
+            android:textSize="@dimen/text_size_15" >
+            
+            <requestFocus />
+            </EditText>
+
+        <EditText
+            android:id="@+id/share_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_13"
+            android:background="@null"
+            android:text="买对股票只完成投资过程的一半或更少，接下来就是跟踪股票，并在股价大幅上涨之后卖掉股票，所以如何卖股票同样至关重要。俗话说：会买是银，..."
+            android:textColor="@color/font_727272"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_1"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_13" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/weixin_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/xinlang_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新浪" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/qq_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QQ" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_1"
+        android:background="@color/divider" />
+
+</LinearLayout>

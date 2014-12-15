@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@color/background_f5f5f5"
+    android:padding="10dp"
+    android:stretchColumns="1" >
+
+    <!-- sell -->
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text=" 时间 "
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_date1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_date2"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dp"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <View
+        android:layout_height="1px"
+        android:background="@color/list_divider_color"
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginBottom="@dimen/space_5"
+         />
+    <!-- buy -->
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text="每股未分配利润(元)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_not_assign_profit1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_not_assign_profit2"
+            android:layout_gravity="right|center_vertical"
+            android:paddingTop="3dp"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text="每股资本公积金(元)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_accumulation_fund1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_accumulation_fund2"
+            android:layout_gravity="right|center_vertical"
+            android:paddingTop="3dp"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text="每股经营现金流(元)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_cash_flow1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_cash_flow2"
+            android:layout_gravity="right|center_vertical"
+            android:paddingTop="3dp"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text="每股收益(元)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_yield1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_yield2"
+            android:layout_gravity="right|center_vertical"
+            android:paddingTop="3dp"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_gravity="left|center_vertical"
+            android:padding="3dip"
+            android:text="每股净资产(元)"
+            android:textColor="@color/app_text_black_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_equity1"
+            android:layout_gravity="right|center_vertical"
+            android:padding="3dip"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/simple_equity2"
+            android:layout_gravity="right|center_vertical"
+            android:paddingTop="3dp"
+            android:textColor="@color/app_lable_text_color"
+            android:textSize="14dp" />
+    </TableRow>
+
+</TableLayout>

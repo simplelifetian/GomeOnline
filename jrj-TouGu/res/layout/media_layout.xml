@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ask_item_media_whole"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ask_item_media_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/voice_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_20" >
+
+        <ImageView
+            android:id="@+id/ask_item_media_vum_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_5"
+            android:background="@anim/frame_voicing"
+            android:gravity="center" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/ask_item_media_time"
+        style="@style/BaseTextView"
+        android:layout_marginLeft="@dimen/space_5"
+        android:textColor="@color/font_4c86c6" />
+
+    <TextView
+        android:id="@+id/ask_item_media_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="visible" />
+
+</LinearLayout>

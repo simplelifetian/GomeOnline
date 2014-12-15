@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp" >
+
+    <RelativeLayout
+        style="@style/BaseLayout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/nametext"
+            style="@style/BaseTextView"
+            android:layout_marginLeft="3dp"
+            android:text="账号" />
+
+        <com.gome.haoyuangong.views.ClearEditText
+            android:id="@+id/login_name"
+            style="@style/BaseEditText"
+            android:layout_marginLeft="76dp"
+            android:hint="请输入手机号/用户名/邮箱"
+            android:inputType="text" >
+
+            <requestFocus />
+        </com.gome.haoyuangong.views.ClearEditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/BaseLayout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            style="@style/BaseTextView"
+            android:layout_marginLeft="3dp"
+            android:text="密码" />
+
+        <com.gome.haoyuangong.views.ClearEditText
+            android:id="@+id/passwd"
+            style="@style/BaseEditText"
+            android:layout_marginLeft="76dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login"
+        style="@style/BaseButton"
+        android:layout_marginTop="27dp"
+        android:text="登录" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/find_pass"
+            style="@style/BaseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <include layout="@layout/search"/>
+
+            <LinearLayout
+                android:id="@+id/searchLableLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:background="@color/background_ECECEC"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/searchLableTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/font_727272"
+                    android:textSize="@dimen/text_size_15" 
+                    android:layout_marginLeft="@dimen/space_13">
+                </TextView>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/inqu_ListView_Stock_LookUp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/divider"
+                android:dividerHeight="1px"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:paddingBottom="5px"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inqu_keyboard"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#282828"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

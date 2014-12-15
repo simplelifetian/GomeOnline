@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_bg_listitem"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_1"
+        android:background="@color/list_divider_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/lo_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_8" >
+            
+            <include layout="@layout/user_header_layout"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_13"
+                android:layout_marginTop="@dimen/space_13" >
+
+                <TextView
+                    android:id="@+id/lastedAnswerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_40"
+                    android:drawablePadding="@dimen/space_7"
+                    android:text="会买是银，会卖是金会买是银，会卖是金会买是银，会卖是金会买是银，会卖是金"
+                    android:textColor="@color/font_595959"
+                    android:textSize="@dimen/text_size_15" />
+            </RelativeLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_13"
+                android:layout_marginLeft="@dimen/space_40"
+                android:background="@drawable/shape_round_corner"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_7"
+                android:paddingRight="@dimen/space_7"
+                android:paddingTop="@dimen/space_10" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/headpic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_ask" />
+
+                        <TextView
+                            android:id="@+id/firstAskText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_7"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="张昭问：明天买什么古柏哦哦赚钱，放松点击发送的第三方斯蒂芬三大普及率"
+                            android:textColor="@color/font_727272"
+                            android:textSize="@dimen/text_size_15" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/space_13"
+                        android:text="3人回答"
+                        android:textColor="@color/font_727272"
+                        android:textSize="@dimen/text_size_12" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_13"
+                android:layout_marginLeft="@dimen/space_40"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/ask_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张浩回答：买对股票只完成投资过程的一半或更少，接下来就是跟踪股票，并在股价大幅上涨之后卖掉股票，所以如何卖股票同样至关重要。俗话说：会买是银"
+                    android:textColor="@color/font_727272"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_13"
+                    android:text="追问张浩：买对股票只完成投资过程的一半或更少，接下来就是跟踪股票，并在股价大幅上涨之后卖掉股票，所以如何卖股票同样至关重要。俗话说：会买是银"
+                    android:textColor="@color/font_727272"
+                    android:textSize="@dimen/text_size_14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lo_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_1"
+                    android:layout_marginLeft="@dimen/space_25"
+                    android:layout_marginRight="@dimen/space_25"
+                    android:background="@color/list_divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/lo_reask"
+                        style="@style/BaseLayout.Clickable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/space_13"
+                        android:paddingTop="@dimen/space_13" >
+
+                        <TextView
+                            android:id="@+id/nametext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/selector_message_reask"
+                            android:drawablePadding="@dimen/space_7"
+                            android:enabled="false"
+                            android:text="追问"
+                            android:textColor="@drawable/selector_message_reask" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="@dimen/divider_1"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/space_3"
+                        android:layout_marginTop="@dimen/space_3"
+                        android:background="@color/list_divider_color" />
+
+                    <LinearLayout
+                        android:id="@+id/lo_comment"
+                        style="@style/BaseLayout.Clickable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/space_13"
+                        android:paddingTop="@dimen/space_13" >
+
+                        <TextView
+                            android:id="@+id/againAnswerView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/selector_message_comment"
+                            android:drawablePadding="@dimen/space_7"
+                            android:text="评论"
+                            android:textColor="@drawable/selector_message_comment" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_13"
+                android:layout_marginLeft="@dimen/space_50"
+                android:layout_marginRight="@dimen/space_13"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View
+                    android:id="@+id/View01"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_1"
+                    android:layout_marginBottom="@dimen/space_13"
+                    android:background="@color/list_divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_13"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评价：非常感谢回复"
+                        android:textColor="@color/font_727272"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pingfen_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评分 : "
+                        android:textColor="@color/font_b2b2b2"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/commentRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:stepSize="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_1"
+        android:background="@color/divider_2" />
+
+</LinearLayout>

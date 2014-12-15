@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/VerticalLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/item_stock_top_ly_price"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="13dip"
+            android:paddingRight="13dip"
+            android:paddingTop="8dp" >
+
+            <RelativeLayout
+                android:id="@+id/VStocksPriceLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <!-- android:background="@color/quote_gray_color" -->
+
+                <TextView
+                    android:id="@+id/VStocksPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="--"
+                    android:textSize="@dimen/stock_chart_big_font"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/VStocksDiffTv_ly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_alignBottom="@id/VStocksPriceTv"
+                    android:layout_toRightOf="@id/VStocksPriceTv"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/VStocksDiffTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textSize="@dimen/stock_chart_small_font" />
+
+                    <TextView
+                        android:id="@+id/VStocksRangeTv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textSize="@dimen/stock_chart_small_font"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/VStocksRangeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/VStocksPriceTv"
+                    android:layout_marginLeft="3dip"
+                    android:layout_toRightOf="@id/VStocksDiffTv_ly"
+                    android:text="--"
+                    android:textSize="@dimen/stock_chart_small_font" />
+
+                <TextView
+                    android:id="@+id/VStocksRefreshTime"
+                    style="@style/BaseTextView"
+                    android:layout_below="@id/VStocksPriceTv"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="最后更新："
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/VStocksSelf"
+                style="@style/BaseTextView.Bluebtn"
+                android:layout_gravity="right|center_vertical"
+                android:padding="@dimen/space_7"
+                android:text="删除自选" />
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="380dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="今开"
+                        android:textColor="@color/app_lable_text_color"
+                        android:textSize="@dimen/stock_chart_mid_font" />
+
+                    <TextView
+                        android:id="@+id/VStocksTextViewOP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/app_text_black_color"
+                        android:textSize="@dimen/stock_chart_mid_font" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="昨收"
+                        android:textColor="@color/app_lable_text_color"
+                        android:textSize="@dimen/stock_chart_mid_font" />
+
+                    <TextView
+                        android:id="@+id/VStocksTextViewlcP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/app_text_black_color"
+                        android:textSize="@dimen/stock_chart_mid_font" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总量:"
+                        android:textColor="@color/app_lable_text_color"
+                        android:textSize="@dimen/stock_chart_mid_font" />
+
+                    <TextView
+                        android:id="@+id/VStocksTextViewVol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/app_text_black_color"
+                        android:textSize="@dimen/stock_chart_mid_font" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="换手率"
+                        android:textColor="@color/app_lable_text_color"
+                        android:textSize="@dimen/stock_chart_mid_font" />
+
+                    <TextView
+                        android:id="@+id/VStocksTextViewHUAN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/app_text_black_color"
+                        android:textSize="@dimen/stock_chart_mid_font" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- android:background="#F3F3F3" -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="8dip"
+                    android:background="#EBEBEB"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="6dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/firstPartLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="8" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="最高"
+                                android:textColor="@color/app_lable_text_color"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+
+                            <TextView
+                                android:id="@+id/VStocksTextViewHP"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:paddingRight="@dimen/stock_top_padding_right"
+                                android:paddingLeft="0dp"
+                                android:text="--"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@id/firstPartLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="8" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="最低"
+                                android:textColor="@color/app_lable_text_color"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+
+                            <TextView
+                                android:id="@+id/VStocksTextViewLP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:paddingRight="@dimen/stock_top_padding_right"
+                                android:paddingLeft="0dp"
+                                android:text="--"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="7"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="成交额"
+                                android:textColor="@color/app_lable_text_color"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+
+                            <TextView
+                                android:id="@+id/VStocksTextViewAmo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="--"
+                                android:textColor="@color/app_text_black_color"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="8" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="振幅"
+                                android:textColor="@color/app_lable_text_color"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+
+                            <TextView
+                                android:id="@+id/VStocksTextViewZhen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:paddingRight="@dimen/stock_top_padding_right"
+                                android:paddingLeft="0dp"
+                                android:text="--"
+                                android:textColor="@color/app_text_black_color"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="8"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="市盈:"
+                                android:textColor="@color/app_lable_text_color"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+
+                            <TextView
+                                android:id="@+id/VStocksTextViewSY"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:paddingRight="@dimen/stock_top_padding_right"
+                                android:paddingLeft="0dp"
+                                android:text="--"
+                                android:textColor="@color/app_text_black_color"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="7"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="总市值"
+                                android:textColor="@color/app_lable_text_color"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+
+                            <TextView
+                                android:id="@+id/VStocksTextViewSZ"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="--"
+                                android:textColor="@color/app_text_black_color"
+                                android:textSize="@dimen/stock_chart_mid_font" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/list_divider_color"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dip"
+                android:background="#EBEBEB"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_marginBottom="3dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/HStocksTabTextView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/stock_chart_bg"
+                    android:gravity="center"
+                    android:text="分时 "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/app_default_mid_font_size" />
+
+                <TextView
+                    android:id="@+id/HStocksTabTextView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/stock_chart_bg"
+                    android:gravity="center"
+                    android:text="日K"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/app_default_mid_font_size" />
+
+                <TextView
+                    android:id="@+id/HStocksTabTextView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/stock_chart_bg"
+                    android:gravity="center"
+                    android:text="周K"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/app_default_mid_font_size" />
+
+                <TextView
+                    android:id="@+id/HStocksTabTextView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/stock_chart_right"
+                    android:gravity="center"
+                    android:text="月K"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/app_default_mid_font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/HStockChartLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/HStockMinLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal" >
+
+                        <com.jrj.myviews.MinChart
+                            android:id="@+id/stockMinCharView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/VStockFivePricetLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="3dip"
+                            android:background="@color/list_divider_color" />
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="28dip"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/VStocksFiveTv"
+                                    android:layout_width="0dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/stock_chart_lable_f"
+                                    android:gravity="center"
+                                    android:text="五档"
+                                    android:textColor="@color/stock_minchart_bluefont_color"
+                                    android:textSize="@dimen/app_default_small_font_size" />
+
+                                <TextView
+                                    android:id="@+id/VStocksTradeMxTv"
+                                    android:layout_width="0dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/stock_chart_lable_n"
+                                    android:gravity="center"
+                                    android:text="明细"
+                                    android:textColor="@color/stock_minchart_bluefont_color"
+                                    android:textSize="@dimen/app_default_small_font_size" />
+                            </LinearLayout>
+
+                            <com.jrj.myviews.StockPriceView
+                                android:id="@+id/stockPrice5View"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/list_divider_color" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:id="@+id/minchart_ly_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:orientation="horizontal"
+            android:showDividers="middle" >
+
+            <TextView
+                android:id="@+id/minchart_tv_buy"
+                style="@style/BaseTextView.Clickable"
+                android:layout_weight="1"
+                android:text="买入"
+                android:textColor="@color/font_4c86c6"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/minchart_tv_sell"
+                style="@style/BaseTextView.Clickable"
+                android:layout_weight="1"
+                android:text="卖出"
+                android:textColor="@color/font_4c86c6"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/minchart_tv_alarm"
+                style="@style/BaseTextView.Clickable"
+                android:layout_weight="1"
+                android:text="设置预警"
+                android:textColor="@color/font_4c86c6"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_10"
+            android:background="@color/background_f5f5f5" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/HStocksOpinionTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/space_12"
+                        android:paddingTop="@dimen/space_12"
+                        android:text="观点"
+                        android:textColor="@color/app_text_black_color"
+                        android:textSize="@dimen/app_default_mid_font_size" />
+
+                    <View
+                        style="@style/Divider"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/space_5"
+                        android:layout_marginTop="@dimen/space_5" />
+
+                    <TextView
+                        android:id="@+id/HStocksF10Tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/space_12"
+                        android:paddingTop="@dimen/space_12"
+                        android:text="F10"
+                        android:textColor="@color/app_text_black_color"
+                        android:textSize="@dimen/app_default_mid_font_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/stockmidArrowIv"
+                    android:layout_width="@dimen/stock_mid_arrow_wid"
+                    android:layout_height="8dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-2dip"
+                    android:src="@drawable/stock_mid_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/stock_minchart_blueline_color"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

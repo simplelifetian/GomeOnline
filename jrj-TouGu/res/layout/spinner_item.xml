@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_item_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_7"
+        android:paddingTop="@dimen/space_7"
+        android:textColor="@color/font_727272"
+        android:textSize="@dimen/text_size_15" />
+    
+</LinearLayout>

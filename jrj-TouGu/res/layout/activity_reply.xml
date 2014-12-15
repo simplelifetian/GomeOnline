@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gome.haoyuangong.views.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_lo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/et_reply"
+                        style="@style/BaseEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_0"
+                        android:layout_marginRight="@dimen/space_0"
+                        android:layout_marginTop="@dimen/space_0"
+                        android:layout_weight="0"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="您发布咨询后，问题将会进入咨询广场，所有专家都可抢答您的提问。"
+                        android:maxLength="200"
+                        android:minHeight="@dimen/space_150"
+                        android:minLines="3"
+                        android:padding="@dimen/space_13"
+                        android:textColorHint="@color/font_b2b2b2" >
+
+                        <!-- android:background="@drawable/shape_round_corner_white_stroke" -->
+                    </EditText>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <include
+                            android:id="@+id/three_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            layout="@layout/three_image_layout" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/image_ly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_reply_count"
+                            style="@style/BaseTextView"
+                            android:layout_gravity="right"
+                            android:paddingBottom="@dimen/space_5"
+                            android:paddingRight="@dimen/space_13"
+                            android:text="10/200"
+                            android:visibility="visible" />
+
+                        <View
+                            android:id="@+id/image_up_divider"
+                            style="@style/Divider" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_13"
+                            android:layout_marginLeft="@dimen/space_13"
+                            android:layout_marginRight="@dimen/space_13"
+                            android:layout_marginTop="@dimen/space_13" >
+
+                            <ImageView
+                                android:id="@+id/imageView_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/icon_biaoqing" />
+
+                            <TextView
+                                android:id="@+id/imageView_1_tip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/space_5"
+                                android:layout_toRightOf="@+id/imageView_1"
+                                android:gravity="center"
+                                android:text="切换语音回答"
+                                android:textColor="@color/font_cccccc"
+                                android:textSize="@dimen/text_size_15"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/imageView_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/space_20"
+                                android:layout_toLeftOf="@+id/imageView_3"
+                                android:src="@drawable/icon_opinion_stock" />
+
+                            <ImageView
+                                android:id="@+id/imageView_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="@dimen/space_20"
+                                android:src="@drawable/icon_opinion_stock" />
+
+                            <Button
+                                android:id="@+id/bt_action"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/selector_button_answer"
+                                android:paddingBottom="@dimen/space_5"
+                                android:paddingLeft="@dimen/space_15"
+                                android:paddingRight="@dimen/space_15"
+                                android:paddingTop="@dimen/space_5"
+                                android:text="评论"
+                                android:textColor="@drawable/selector_button_answer"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:id="@+id/pingfen_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical" >
+
+                                <TextView
+                                    android:id="@+id/nametext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="评分 : "
+                                    android:textColor="@color/font_727272"
+                                    android:textSize="@dimen/text_size_17" />
+
+                                <RatingBar
+                                    android:id="@+id/ratingBar"
+                                    style="@style/commentRatingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:stepSize="1" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/shandow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#55000000"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/media_layout"
+                layout="@layout/recorder_layout"
+                android:visibility="gone" />
+
+            <com.gome.haoyuangong.views.EmotionsLayout
+                android:id="@+id/emotion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone" >
+            </com.gome.haoyuangong.views.EmotionsLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.gome.haoyuangong.views.KeyboardLayout>
+

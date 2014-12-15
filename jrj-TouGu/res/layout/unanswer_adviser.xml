@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layoutheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/imageViewHead"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/icon111" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewHead"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/imageViewHead"
+            android:text="美丽"
+            android:textColor="@color/font_4c87c6"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/evaluateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewName"
+            android:layout_alignBottom="@+id/textViewName"
+            android:layout_toRightOf="@+id/textViewName"
+            android:text="问:"
+            android:textColor="@color/font_727272"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/textCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewName"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/textViewName"
+            android:text="09-20 14:20"
+            android:textColor="#b3b3b3"
+            android:textSize="@dimen/text_size_12" />
+
+        <com.gome.haoyuangong.views.TagTextView
+            android:id="@+id/textViewAnswer"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/evaluateTextView"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            style="@style/BaseTextView.Bluebtn"
+            android:minEms="4"
+            android:text="回答" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="bottom" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_fensi" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textViewContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="13dp"
+                android:text="发的发生的发生的方式发送到发送到发送到"
+                android:textColor="@color/font_595959"
+                android:textSize="@dimen/text_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewContent" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14dp"
+                    android:gravity="right"
+                    android:textColor="#b3b3b3"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

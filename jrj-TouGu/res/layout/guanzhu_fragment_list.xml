@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/guanzhu_guide" />
+
+    </FrameLayout>
+    
+    <FrameLayout
+        android:id="@+id/nodata_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f0f0f0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_nodata" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_13"
+                android:text="您关注的投顾未发布观点"
+                android:textColor="@color/font_b2b2b2"
+                android:textSize="@dimen/text_size_18" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+    
+    <com.gome.haoyuangong.views.xlistview.XListView
+        android:id="@+id/list"
+        style="@style/BaseListView"
+        android:layout_weight="1"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/space_7"
+        android:listSelector="@drawable/list_item_drawable_bg" />
+
+</LinearLayout>

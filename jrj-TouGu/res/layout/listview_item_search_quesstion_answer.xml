@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_13" >
+
+        <ImageView
+            android:id="@+id/headpic"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:src="@drawable/head_default" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/nametext"
+            android:layout_toRightOf="@+id/ask_item_tv_name" />
+
+        <RatingBar
+            android:id="@+id/rating_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:numStars="1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/igid_date"
+            style="@style/BaseTextView.ask.company"
+            android:layout_alignBottom="@+id/headpic"
+            android:layout_alignLeft="@+id/ask_item_tv_name"
+            android:text="中信证券"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/ask_item_tv_name"
+            style="@style/BaseTextView.ask.name"
+            android:layout_alignTop="@+id/headpic"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_toRightOf="@+id/headpic"
+            android:text="李家志" />
+
+        <TextView
+            android:id="@+id/ask_item_tv_time"
+            style="@style/BaseTextView.ask.time"
+            android:layout_alignLeft="@+id/ask_item_tv_name"
+            android:layout_alignBottom="@+id/headpic"
+            android:text="10:54" />
+		<TextView
+            android:id="@+id/ask_item_btn_answer"
+            style="@style/BaseTextView.Bluebtn"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ask_item_tv_name"
+            android:minEms="4"
+            android:text="回答" />
+        <TextView
+            android:id="@+id/ask_item_tv_qa"
+            style="@style/BaseTextView.ask.content"
+            android:layout_alignLeft="@id/igid_date"
+            android:layout_below="@id/igid_date"
+            android:layout_marginTop="@dimen/space_13"
+            android:maxLines="3"
+            android:text="买对股票只完成投资过程的一半或更少，接下来就是跟踪股票，并在股价大幅上涨之后卖掉股票，所以如何卖股票同样至关重要。" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ask_item_iv_fensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/icon_fensi" />
+
+</RelativeLayout>

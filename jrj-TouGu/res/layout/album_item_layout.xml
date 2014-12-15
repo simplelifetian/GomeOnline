@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/album_item"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/image_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon111" />
+
+        <TextView
+            android:id="@+id/photo_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="(40)"
+            android:textColor="@color/background_f5f5f5" />
+
+        <TextView
+            android:id="@+id/album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的相册"
+            android:textColor="@color/background_f5f5f5" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

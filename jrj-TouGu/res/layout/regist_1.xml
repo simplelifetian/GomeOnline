@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:layout_marginTop="30dp"
+        
+        >
+
+        <LinearLayout
+            style="@style/BaseLayout"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_4"
+            android:paddingBottom="15dp"
+            android:background="@drawable/bottom_line" >
+
+            <TextView
+                android:id="@+id/igid_date"
+                style="@style/BaseTextView"
+                android:text="手机号码"
+                
+            />
+
+            <com.gome.haoyuangong.views.ClearEditText
+                android:id="@+id/phone_no"
+                style="@style/BaseEditText"
+                android:layout_marginLeft="@dimen/space_8"
+                android:layout_height="match_parent"
+                android:hint="请输入手机号码"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/BaseButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space_27"
+            android:text="下一步" />
+        <LinearLayout
+            style="@style/BaseLayout"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/agreement_check"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:checked="true"
+                android:button="@null"
+                android:background="@drawable/checkbox_bg"
+                />
+
+
+            <TextView
+                android:id="@+id/agreement_text"
+                style="@style/BaseTextView"
+                android:layout_marginLeft="@dimen/space_5"
+                android:textColor="@color/font_595959"
+                android:textSize="@dimen/text_size_15"
+                android:text="@string/agreement"
+                 />
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+</ScrollView>

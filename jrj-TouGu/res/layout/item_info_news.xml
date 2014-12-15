@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="5dip"
+    android:paddingTop="10dip" 
+    >
+    <TextView
+        android:id="@+id/TitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        
+        android:textColor="@color/info_item_title_text_color"
+        android:textSize="@dimen/info_list_item_title_font_size" />
+    <TextView
+        android:id="@+id/SummaryTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginTop="2dip"
+        android:textColor="@color/info_item_summary_text_color"
+        android:textSize="@dimen/info_list_item_summary_font_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:layout_marginTop="2dip"
+        android:orientation="horizontal">
+        <ImageView
+           android:layout_width="13dip"
+           android:layout_height="13dip"
+           android:src="@drawable/info_time_icon"
+           android:layout_marginRight="2dip"
+            />
+        <TextView
+           android:id="@+id/TimeTextView"
+           android:layout_width="@dimen/info_time_text_wid"
+           android:layout_height="wrap_content"
+           android:textColor="@color/info_item_time_text_color"
+           android:textSize="@dimen/info_list_item_date_font_size" 
+           />
+    </LinearLayout>
+
+</LinearLayout>

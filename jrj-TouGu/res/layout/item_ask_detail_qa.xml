@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/BaseLayout"
+        android:background="@color/white"
+        android:orientation="vertical" 
+        android:layout_marginBottom="@dimen/space_13">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/space_13" >
+
+            <ImageView
+                android:id="@+id/headpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_ask" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/nametext"
+                android:layout_toRightOf="@+id/ask_item_tv_name" />
+
+            <RatingBar
+                android:id="@+id/rating_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:numStars="1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/igid_date"
+                style="@style/BaseTextView.ask.company"
+                android:layout_alignBottom="@+id/headpic"
+                android:layout_alignLeft="@+id/ask_item_tv_name"
+                android:text=""
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/ask_item_tv_name"
+                style="@style/BaseTextView.ask.name"
+                android:layout_alignTop="@+id/headpic"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_toRightOf="@+id/headpic"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/ask_item_tv_time"
+                style="@style/BaseTextView.ask.time"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/ask_item_tv_name"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/ask_item_tv_qa"
+                style="@style/BaseTextView.ask.content"
+                android:layout_alignLeft="@+id/headpic"
+                android:layout_below="@id/igid_date"
+                android:layout_marginTop="@dimen/space_13"
+                android:text="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ask_item_tv_answercount"
+            style="@style/BaseTextView.ask.answernum"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/space_13"
+            android:layout_marginBottom="@dimen/space_13"
+            android:text="" 
+            />
+        <View style="@style/Divider"/>
+    </LinearLayout>
+
+</LinearLayout>

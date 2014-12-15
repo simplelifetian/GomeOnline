@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/background_ECECEC"
+        android:ems="10"
+        android:gravity="center"
+        android:text="签约提示"
+        android:textColor="@color/font_4c87c6"
+        android:textSize="@dimen/text_size_14" >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/content1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="20dp"
+            android:text="抱歉，您与该投顾的签约时间不满7天，暂时无法解约。"
+            android:textColor="@color/font_595959"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/background_ECECEC"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/unsign_btncancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="@color/font_4c87c6"
+            android:text="我知道了"
+            android:textColor="@color/font_4c87c6"
+            android:textSize="@dimen/text_size_14" >
+
+    </TextView>  
+
+        <TextView
+            android:id="@+id/unsign_btnok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="绑定证券通"
+            android:textColor="@color/font_4c87c6"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone" >
+
+    </TextView>     
+    </LinearLayout>
+
+</LinearLayout>

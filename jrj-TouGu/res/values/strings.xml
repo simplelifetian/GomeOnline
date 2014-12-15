@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 主界面 -->
+    <string name="actionbar_bottom_results">业绩</string>
+    <string name="actionbar_bottom_product">产品</string>
+    <string name="actionbar_bottom_sales">促销</string>
+    <string name="actionbar_bottom_customer">客户</string>
+    <string name="text_incoming">%1$s月累计收入（元）</string>
+    <string name="text_incoming_size">%1$s</string>
+    <string name="text_rankings">国美集团今日排名%s名</string>
+    <string name="text_zero_thousand">0万</string>
+    <string name="text_eight_milion">全年880万</string>
+
+    
+    
+    <string name="app_name">国美好员工</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">description</string>
+
+    <string name="home">首页</string>
+    <string name="message">消息</string>
+    <string name="friends">好友</string>
+    <string name="square">广场</string>
+    <string name="more">更多</string>
+	<string name="regist">注册</string>
+	<string name="regist3">完善个人资料</string>
+    <string name="phoneSelect1">拍照</string>
+    <string name="phoneSelect2">从手机相册选择</string>
+	
+	<string name="agreement">我已阅读并同意《爱投顾用户服务协议》</string>
+	<string name="regist2_tip">已经发送验证码到以下手机号</string>
+	<string name="regist2_check">重新获取</string>
+	<string name="second">%s秒</string>
+	<string name="regist3_auth">我要认证投资顾问></string>
+	<string name="regist3_tip">设置个人头像，方便您与投资顾问交流</string>
+	
+	<string name="warn_no_sdcard">未检测到sd卡，请插入sd卡</string>
+	
+	<string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <string name="insert_sd_card" msgid="2251831579676114197">"需要SD卡才可使用"</string>
+    <string name="storage_is_full" msgid="416039755956726221">"存储空间已满"</string>
+    <string name="timer_format">%d\"</string>
+    <string name="timer_format_record">%1$d\"/%2$d</string>
+    
+    <string name="default_server">spbjandroid.jrj.com.cn</string>
+    <string name="default_port">8888</string>
+    <string name="last_refresh">最后更新：%s</string>
+    <string name="stock_empty_str">自选股为空，点击进行添加</string>
+    <string name="adviser_accreditation_submit">感谢您认证投资顾问，我们将会在3个工作日内回复您是否通过审核。</string>
+    <string name="adviser_accreditation_fail">您的申请未通过审核，资格编号与姓名不符，照片清晰度不够。</string>
+    <string name="adviser_accreditation_ing">您的申请正在审核中，如有问题，请拨打客服电话</string>
+    
+     <!-- 预警相关 -->
+    <string name="alarm_nodata">您还没有添加预警！</string>
+    <string name="alarm_alarming">预警中</string>
+    <string name="alarm_history">历史预警</string>
+    <string name="alarm_list_item_content1"><Data><![CDATA[股价上涨达到%1$s</font>元；]]></Data></string>
+    <string name="alarm_list_item_content2"><Data><![CDATA[股价下跌达到%1$s</font>元；]]></Data></string>
+    <string name="alarm_list_item_content3"><Data><![CDATA[日涨跌幅超过%1$s%%</font>；]]></Data></string>
+    <string name="alarm_setup_ceil_intro">股票涨到</string>
+    <string name="alarm_setup_floor_intro">股票跌到</string>
+    <string name="alarm_setup_rdp_intro">日涨跌幅超</string>
+    <string name="alarm_setup_yuan">元</string>
+    <string name="alarm_setup_percent">%</string>
+    <string name="alarm_setup_tips">程序预警：以消息推送方式，每日限预警推送消息为 90条</string>
+    <string name="alarm_setup_newprice">最新价</string>
+    <string name="alarm_setup_rdp">涨跌幅 </string>
+    <string name="alarm_setup_add_ok">预警设置成功！ </string>
+    <string name="alarm_setup_add_error">预警设置失败！ </string>
+    <string name="alarm_setup_add_limit">预警数量已达上限！</string>
+    <string name="alarm_search_alarmed">已预警 </string>
+    <string name="alarm_stock_type_gp">s</string>
+    <string name="alarm_stock_type_zs">i</string>
+    <string name="alarm_stock_type_jj">f</string>
+    
+    <string name="update_incremental_update_tip">省流量更新，仅需%1$s (%2$s)</string>
+    <string name="image_lable"><Data><![CDATA[<img src="%1$s"  width="%2$s" height="%3$s"/>]]></Data></string>
+    
+    <string name="limit_tip">该投顾的签约用户可查看私密观点</string>
+</resources>

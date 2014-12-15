@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp" >
+
+        <TextView
+            android:id="@+id/tipView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="14dp"
+            android:layout_toRightOf="@+id/imageViewHead"
+            android:text="@string/adviser_accreditation_submit"
+            android:textColor="@color/font_727272"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/evaluateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tipView"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/tipView"
+            android:text="客服电话"
+            android:textColor="@color/font_727272"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/tipView"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/evaluateTextView"
+            android:text="400-166-1188"
+            android:textColor="@color/font_4c87c6"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/imageViewHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/icon_biaoqing" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/reAccreditate"
+        style="@style/BaseButton"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="27dp"
+        android:text="重新认证"
+        android:visibility="invisible" />
+
+</LinearLayout>

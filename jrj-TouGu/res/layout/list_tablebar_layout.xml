@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableBarLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/space_40"
+    android:background="#eeffffff" >
+
+    <com.gome.haoyuangong.views.MyHorizontalScrollView
+        android:id="@+id/toogelsbar_ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/toolsbar_LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </com.gome.haoyuangong.views.MyHorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:paddingBottom="@dimen/space_5"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_round_corner_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_listitem_round_top"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/BaseTextView.Clickable"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:text="分享"
+                android:textColor="@color/font_194678" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_1"
+            android:background="@color/divider_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_27"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/select1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/headpic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_share_weixin" />
+
+                <TextView
+                    android:id="@+id/nametext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_13"
+                    android:textColor="@color/font_7f7f7f"
+                    android:textSize="@dimen/text_size_13"
+                    android:text="微信好友" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_share_friends" />
+
+                <TextView
+                    android:id="@+id/igid_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_13"
+                    android:textColor="@color/font_7f7f7f"
+                    android:textSize="@dimen/text_size_13"
+                    android:text="微信朋友圈" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_share_sina" />
+
+                <TextView
+                    android:id="@+id/textViewContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_13"
+                    android:textColor="@color/font_7f7f7f"
+                    android:textSize="@dimen/text_size_13"
+                    android:text="新浪微博" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+	<TextView
+	    android:id="@+id/cancel"
+	    style="@style/BaseTextView.Clickable"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/space_5"
+	    android:background="@drawable/selector_bg_listitem_round"
+	    android:text="取消"
+	    android:textColor="@color/font_c30114" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gome.haoyuangong.views.xlistview.XListView
+        android:id="@+id/list"
+        style="@style/BaseListView"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/space_7"
+        android:listSelector="@drawable/list_item_drawable_bg" 
+        android:layout_marginTop="-3px"/>
+
+</LinearLayout>

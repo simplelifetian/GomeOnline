@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/space_13" >
+
+                <TextView
+                    android:id="@+id/jubao_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您举报****的理由是:"
+                    android:textColor="@color/font_595959"
+                    android:textSize="@dimen/text_size_16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/jubao_item_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_bg"
+                        android:checked="true"
+                        android:text="  违反法律法规"
+                        android:textColor="@color/font_727272"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <CheckBox
+                        android:id="@+id/jubao_item_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:button="@drawable/checkbox_bg"
+                        android:text="  暴力色情"
+                        android:textColor="@color/font_727272"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <CheckBox
+                        android:id="@+id/jubao_item_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:button="@drawable/checkbox_bg"
+                        android:text="  诈骗和虚假信息"
+                        android:textColor="@color/font_727272"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <CheckBox
+                        android:id="@+id/jubao_item_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:button="@drawable/checkbox_bg"
+                        android:text="  抄袭"
+                        android:textColor="@color/font_727272"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <CheckBox
+                        android:id="@+id/jubao_item_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:button="@drawable/checkbox_bg"
+                        android:text="  骚扰"
+                        android:textColor="@color/font_727272"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="其他"
+                        android:textColor="@color/font_727272"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <EditText
+                        android:id="@+id/jubao_content"
+                        style="@style/BaseEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:background="@drawable/shape_round_corner_white_stroke"
+                        android:ems="10"
+                        android:gravity="left"
+                        android:hint="请输入您的理由..."
+                        android:inputType="textMultiLine"
+                        android:maxLength="200"
+                        android:minHeight="@dimen/space_70"
+                        android:padding="@dimen/space_3"
+                        android:textColorHint="@color/font_b2b2b2" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_bg_listitem"
+                    android:gravity="center"
+                    android:padding="@dimen/space_13"
+                    android:text="提交"
+                    android:textColor="@color/font_c30114" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
