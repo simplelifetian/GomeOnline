@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_selected="false">
-        <shape>
-            <solid android:color="@color/color_tab_bg_normal"/>
-            <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" 
-                android:topLeftRadius="2dp" android:topRightRadius="2dp"/>
-        </shape>
-    </item>
-    <item android:state_selected="true">
-        <shape>
-            <solid android:color="@color/color_tab_bg_selected"/>
-            <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp"
-                android:topLeftRadius="2dp" android:topRightRadius="2dp"/>
-        </shape>
-    </item>
+<!--     <item android:state_selected="false"> -->
+<!--         <shape> -->
+<!--             <solid android:color="@color/color_tab_bg_normal"/> -->
+<!--             <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp"  -->
+<!--                 android:topLeftRadius="2dp" android:topRightRadius="2dp"/> -->
+<!--         </shape> -->
+<!--     </item> -->
+<!--     <item android:state_selected="true"> -->
+<!--         <shape> -->
+<!--             <solid android:color="@color/color_tab_bg_selected"/> -->
+<!--             <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" -->
+<!--                 android:topLeftRadius="2dp" android:topRightRadius="2dp"/> -->
+<!--         </shape> -->
+<!--     </item> -->
+  <item android:drawable="@drawable/tab_red_bg_selected" android:state_selected="true"/>
+  <item android:drawable="@drawable/tab_red_bg_normal"/>
+
 </selector>

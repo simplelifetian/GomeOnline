@@ -19,6 +19,9 @@
     <color name="color_text_gray_9b">#9b9b9b</color>
     <color name="color_tab_bg_normal">#D94050</color>
     <color name="color_tab_bg_selected">#bb0013</color>
+    <color name="color_ececec">#ececec</color>
+    
+    
     
 	
     <color name="safe_mode_text">#80ffffff</color>

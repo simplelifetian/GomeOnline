@@ -32,6 +32,18 @@
     <string name="text_msg_one">微笑</string>
     <string name="text_msg_two">好的</string>
     <string name="text_msg_three">今天早上在哪里？</string>
+    <string name="text_card_add_new">新的客户</string>
+    <string name="text_card_group">群聊</string>
+    <string name="text_card_public">公众号</string>
+    <string name="text_card_coopration">合作商户</string>
+    <string name="text_angel">Angel</string>
+    <string name="text_success">成功领到国美收银台一部</string>
+    <string name="text_ten_minite">10分钟之前</string>
+    <string name="text_30_minite">30分钟之前</string>
+    <string name="text_bai">白云边</string>
+    <string name="text_share">分享了一张优惠卷</string>
+    <string name="text_subway">subway</string>
+    <string name="text_buy">购买精选系列送饮料优惠券</string>
     
     
 

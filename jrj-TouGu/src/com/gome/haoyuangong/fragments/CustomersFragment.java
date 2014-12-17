@@ -71,24 +71,12 @@ public class CustomersFragment extends BaseFragment{
 					f = gf;
 					break;
 				case 1:
-					MessageListFragment mf = new MessageListFragment();
-					mf.setPageIndicatorTipListener(new PageIndicatorTipListener() {
-						
-						@Override
-						public void onTipChanged(int visable) {
-							// TODO Auto-generated method stub
-							if(View.VISIBLE == visable){
-								mIndicator.setItemIndex(1, "5");
-							}else{
-								mIndicator.setItemIndex(1, "");
-							}
-						}
-					});
+					CustomersCardFragment mf = new CustomersCardFragment();
 					f = mf;
 					mapFragment.put(position, f);
 					break;
 				case 2:
-					DTHotOpinionListFragment _f = new DTHotOpinionListFragment();
+					DynamicFragment _f = new DynamicFragment();
 					f = _f;
 					mapFragment.put(position, f);
 					break;

@@ -29,6 +29,16 @@
         <item name="android:textSize">14sp</item>
 	    <item name="android:textColor">@color/color_red</item>
     </style>
+    
+    <style name="text_card_type_footer">
+        <item name="android:textSize">16sp</item>
+	    <item name="android:textColor">@color/color_key_process</item>
+    </style>
+    
+    <style name="text_card_type">
+        <item name="android:textSize">14sp</item>
+	    <item name="android:textColor">@color/color_key_process</item>
+    </style>
 
     
     

@@ -1,42 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="#234543"
+    android:background="@color/color_ececec"
     android:orientation="vertical" >
-    <RelativeLayout android:layout_height="45dp"
-        android:layout_width="match_parent"
-        android:layout_margin="13dp"
-        android:background="#654765">
-        <ImageView android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:src="@drawable/ic_launcher"
-            android:layout_alignParentLeft="true"
-            android:contentDescription="@null"
-            android:id="@+id/iv_search"
-            android:layout_marginLeft="13dp"
-            android:layout_marginRight="13dp"
-            android:layout_centerVertical="true"
-            />
-         <ImageView android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:src="@drawable/ic_launcher"
-            android:layout_alignParentRight="true"
-            android:contentDescription="@null"
-            android:id="@+id/iv_delete"
-            android:layout_marginLeft="13dp"
-            android:layout_marginRight="13dp"
-            android:layout_centerVertical="true"
-            />
-        <EditText 
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:layout_toRightOf="@id/iv_search"
-            android:layout_toLeftOf="@id/iv_delete"
-            android:background="@color/white"
-            android:hint="@string/text_search"
-            android:id="@+id/et_search"/>
-    </RelativeLayout>
+
+	<include android:layout_height="40dp"
+	    android:layout_width="match_parent"
+	    layout="@layout/common_search_bar"
+	    android:layout_margin="13dp"
+	    />
     <ListView android:layout_height="wrap_content"
 	    android:layout_width="match_parent"
         android:cacheColorHint="#00000000"

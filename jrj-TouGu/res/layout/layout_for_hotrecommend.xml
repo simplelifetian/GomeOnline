@@ -17,27 +17,27 @@
             android:layout_height="match_parent" >
 
             <TextView
-                style="@style/BaseTextView.Redbtn"
+                style="@style/BaseTextView.Bluebtn"
                 android:layout_weight="1"
                  
                 android:text="推荐" />
 
             <TextView
-                style="@style/BaseTextView.Redbtn"
+                style="@style/BaseTextView.Bluebtn"
                 android:layout_weight="1"
                  
                 android:text="价格"
                  />
 
             <TextView
-                style="@style/BaseTextView.Redbtn"
+                style="@style/BaseTextView.Bluebtn"
                 android:layout_weight="1"
                  
                 android:text="销量"
                  />
             
             <TextView
-                style="@style/BaseTextView.Redbtn"
+                style="@style/BaseTextView.Bluebtn"
                 android:layout_weight="1"
                  
                 android:text="评价"
