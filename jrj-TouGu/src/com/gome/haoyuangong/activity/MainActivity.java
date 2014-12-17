@@ -33,9 +33,10 @@ import com.gome.haoyuangong.LogUpdate;
 import com.gome.haoyuangong.R;
 import com.gome.haoyuangong.UserInfo;
 import com.gome.haoyuangong.db.QuoteDic;
-import com.gome.haoyuangong.fragments.DongTaiFragment;
+import com.gome.haoyuangong.fragments.CustomersFragment;
 import com.gome.haoyuangong.fragments.EmptyFragment;
 import com.gome.haoyuangong.fragments.FoundFragments;
+import com.gome.haoyuangong.fragments.ResultsFragment;
 import com.gome.haoyuangong.fragments.SelfFragment;
 import com.gome.haoyuangong.log.Logger;
 import com.gome.haoyuangong.net.Request;
@@ -74,7 +75,7 @@ public class MainActivity extends BaseActivity{
 	private LayoutInflater layoutInflater;
 
 	// 定义数组来存放Fragment界面
-	private Class fragmentArray[] = { DongTaiFragment.class, FoundFragments.class,
+	private Class fragmentArray[] = { ResultsFragment.class, CustomersFragment.class,
 			EmptyFragment.class, SelfFragment.class };
 	// 定义数组来存放按钮图片
 	private int mImageViewArray[] = { R.drawable.tab_results, R.drawable.tab_customer, 

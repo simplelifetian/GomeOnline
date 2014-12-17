@@ -105,6 +105,7 @@ public class MyViewPageIndicator extends HorizontalScrollView implements PageInd
 		padding = dipToPixels(10);
 		pointSize = dipToPixels(8);
 		mTabLayout = new LinearLayout(context);
+		mTabLayout.setPadding(0, padding, 1, padding);
 		addView(mTabLayout, new ViewGroup.LayoutParams(WRAP_CONTENT, MATCH_PARENT));
 	}
 
@@ -179,7 +180,7 @@ public class MyViewPageIndicator extends HorizontalScrollView implements PageInd
 //		tabView.setFocusable(true);
 //		tabView.setOnClickListener(mTabClickListener);
 		tabView.setText(text);
-		tabView.setPadding(pointSize, 0, pointSize, 0);
+		//tabView.setPadding(pointSize, 0, pointSize, 0);
 		tabView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
 		tabView.setMaxLines(1);
 		tabView.setGravity(Gravity.CENTER);
@@ -192,24 +193,27 @@ public class MyViewPageIndicator extends HorizontalScrollView implements PageInd
 		}
 
 		if (iconResId != 0) {
-			tabView.setCompoundDrawablesWithIntrinsicBounds(iconResId, 0, 0, 0);
+			//tabView.setCompoundDrawablesWithIntrinsicBounds(iconResId, 0, 0, 0);
 		}
 		
-		FrameLayout.LayoutParams tabTvL = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+		FrameLayout.LayoutParams tabTvL = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
 		tabView.setLayoutParams(tabTvL);
 		
-		measureView(tabView);
+		//measureView(tabView);
 		
 		LinearLayout layoutWraper1 = new LinearLayout(getContext());
-//		LinearLayout.LayoutParams lp1 = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT,1);
-//		layoutWraper1.setLayoutParams(lp1);
+		LinearLayout.LayoutParams lp1 = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT,1);
+		layoutWraper1.setLayoutParams(lp1);
 		layoutWraper1.setGravity(Gravity.CENTER);
 		layoutWraper1.setFocusable(true);
 		layoutWraper1.setOnClickListener(mTabClickListener);
+		layoutWraper1.setPadding(0, 0, 0, 0);
+		layoutWraper1.setBackgroundResource(R.drawable.tab_btn_red);
 		
 		FrameLayout frameLayout = new FrameLayout(getContext());
 		frameLayout.setTag("framelayout");
-		FrameLayout.LayoutParams fl2 = new FrameLayout.LayoutParams(tabView.getMeasuredWidth() + padding,tabView.getMeasuredHeight()+ (int)(padding * 1.5));
+//		FrameLayout.LayoutParams fl2 = new FrameLayout.LayoutParams(tabView.getMeasuredWidth() + padding, tabView.getMeasuredHeight()+ (int)(padding * 1.5));
+		FrameLayout.LayoutParams fl2 = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
 //		frameLayout.setPadding(padding, padding, padding, padding);
 		frameLayout.setLayoutParams(fl2);
 //		frameLayout.addView(tabView);
@@ -221,7 +225,7 @@ public class MyViewPageIndicator extends HorizontalScrollView implements PageInd
 		hasNew.setBackgroundResource(R.drawable.shape_circle);
 		
 		FrameLayout tabTvframe = new FrameLayout(getContext());
-		FrameLayout.LayoutParams tabTvframeL = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+		FrameLayout.LayoutParams tabTvframeL = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
 		tabTvframeL.gravity = Gravity.CENTER;
 		tabTvframe.setLayoutParams(tabTvframeL);
 		tabTvframe.addView(tabView);
@@ -326,7 +330,7 @@ public class MyViewPageIndicator extends HorizontalScrollView implements PageInd
 			}
 			FrameLayout f = (FrameLayout)child.findViewWithTag("framelayout");
 			if(i == item){
-				f.setBackgroundResource(R.drawable.icon_tab_focus);
+				//f.setBackgroundResource(R.drawable.icon_tab_focus);
 			}else{
 				f.setBackgroundResource(0);
 			}

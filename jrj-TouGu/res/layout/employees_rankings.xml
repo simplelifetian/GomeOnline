@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_rankings_bg"
+    android:paddingTop="13dp"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/rankings_text_left">
+        <ImageView android:layout_height="@dimen/incoming_drawable_size"
+            android:layout_width="@dimen/incoming_drawable_size"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_flower"
+            />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_rankings"
+            android:layout_marginLeft="6dp"
+            style="@style/rankings_text"
+            android:text="@string/text_rankings"/>
+    </LinearLayout>
+	<RelativeLayout android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="@dimen/rankings_text_top"
+	    android:layout_marginLeft="@dimen/rankings_text_left"
+	    android:layout_marginRight="@dimen/rankings_text_left"
+	    >
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/text_zero_thousand"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv_zero"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="8dp"
+            />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/text_eight_milion"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_eight_milion"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="8dp"
+            />
+	    <ProgressBar android:layout_height="@dimen/progress_height"
+	        android:layout_width="match_parent"
+	        android:layout_below="@id/tv_zero"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_gravity="center_horizontal"
+            android:progressDrawable="@drawable/progress_bar_drawable" 
+	        android:id="@+id/progress_rankings"
+	        />
+	    <FrameLayout android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        >
+	        <TextView android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:id="@+id/tv_progress_size"
+	            android:layout_marginLeft="45dp"
+	            android:drawableBottom="@drawable/icon_arrow_down"
+	            />
+	    </FrameLayout>
+	</RelativeLayout>
+	<TextView android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:id="@+id/tv_randkings_describe"
+	    style="@style/rankings_describe"
+	    android:layout_marginLeft="@dimen/space_20"
+	    android:layout_marginRight="@dimen/space_20"
+	    android:layout_marginTop="@dimen/space_6"
+	    android:layout_marginBottom="@dimen/space_3"
+	    android:text="@string/text_rankings_describe"/>
+</LinearLayout>

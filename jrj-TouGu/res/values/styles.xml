@@ -1,5 +1,38 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+   	<style name="incoming_text">
+        <item name="android:textSize">14sp</item>
+	    <item name="android:textColor">@color/color_white</item>
+    </style>
+    
+    <style name="incoming_text_num">
+        <item name="android:textSize">22sp</item>
+	    <item name="android:textColor">@color/color_white</item>
+    </style>
+    
+    <style name="rankings_text">
+        <item name="android:textSize">16sp</item>
+	    <item name="android:textColor">@color/color_red</item>
+    </style>
+    
+    <style name="rankings_describe">
+        <item name="android:textSize">14sp</item>
+	    <item name="android:textColor">@color/color_rankings_describe</item>
+    </style>
+    
+    <style name="text_key_process">
+        <item name="android:textSize">16sp</item>
+	    <item name="android:textColor">@color/color_key_process</item>
+    </style>
+    
+    <style name="style_btn">
+        <item name="android:textSize">14sp</item>
+	    <item name="android:textColor">@color/color_red</item>
+    </style>
 
+    
+    
+    
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in

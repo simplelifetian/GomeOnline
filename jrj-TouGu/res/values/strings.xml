@@ -10,6 +10,30 @@
     <string name="text_rankings">国美集团今日排名%s名</string>
     <string name="text_zero_thousand">0万</string>
     <string name="text_eight_milion">全年880万</string>
+    <string name="text_progress_size">%1$s万</string>
+    <string name="text_rankings_describe">您已超越集团%1$s以上的店员，距离目标仅需%2$s万。</string>
+    <string name="text_key_process">关键过程指标:</string>
+    <string name="text_over_size">超过%1$s的国美员工</string>
+    <string name="text_pieces">%1$s件</string>
+    <string name="text_time">%1$s次</string>
+    <string name="text_people">%1$s人</string>
+    <string name="text_percentage">%1$s</string>
+    <string name="text_describte_sold_products">已销售产品数</string>
+    <string name="text_describte_sold_customers">已销售客户数</string>
+    <string name="text_describte_communication">沟通次数/客户</string>
+    <string name="text_describte_gift">送礼次数/客户</string>
+    <string name="text_describte_promute">送礼次数/客户</string>
+    <string name="text_btn_add_product">添加产品</string>
+    <string name="text_btn_add_people">添加人数</string>
+    <string name="text_btn_communication">立即沟通</string>
+    <string name="text_btn_gift">立即送礼</string>
+    <string name="text_btn_promute">立即优化</string>
+    <string name="text_search">搜索手机号</string>
+    <string name="text_msg_one">微笑</string>
+    <string name="text_msg_two">好的</string>
+    <string name="text_msg_three">今天早上在哪里？</string>
+    
+    
 
     
     
