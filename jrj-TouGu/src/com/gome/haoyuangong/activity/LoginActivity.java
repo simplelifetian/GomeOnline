@@ -60,6 +60,8 @@ public class LoginActivity extends BaseActivity{
 	
 	private Button login;
 	
+	private Button regist;
+	
 	private EditText loginName;
 	
 	private EditText passwd;
@@ -123,11 +125,14 @@ public class LoginActivity extends BaseActivity{
 		login = (Button)findViewById(R.id.login);
 		login.setOnClickListener(this);
 		
+		regist = (Button)findViewById(R.id.regist);
+		regist.setOnClickListener(this);
+		
 		findPass = (TextView)findViewById(R.id.find_pass);
 		findPass.setOnClickListener(this);
 		
 		titleLeft1.setBackgroundResource(R.drawable.title_finish);
-		titleRight2.setText("注册");
+//		titleRight2.setText("注册");
 	}
 
 	@Override
@@ -141,6 +146,10 @@ public class LoginActivity extends BaseActivity{
 //			startActivity(intent1);
 //			ITradePresenter itp = new ITradePresenter(this);
 //			itp.gotoTrade();
+			break;
+		case R.id.regist:
+			Intent intent1 = new Intent(this, RegistApplyActivity.class);
+			startActivity(intent1);
 			break;
 		case R.id.find_pass:
 			Intent intent2 = new Intent(this,FindPass1Activity.class);

@@ -93,7 +93,7 @@ public class FindPass1Activity extends BaseActivity{
 	}
 	
 	private void initViews(){
-		phoneNum = (EditText)findViewById(R.id.phone_num);
+		phoneNum = (EditText)findViewById(R.id.name_input);
 		vCode = (EditText)findViewById(R.id.et_vcode);
 		getVcode = (TextView)findViewById(R.id.get_vcode);
 		getVcode.setOnClickListener(this);
@@ -103,7 +103,7 @@ public class FindPass1Activity extends BaseActivity{
 	}
 	
 	private void initFindPass(){
-		setTitle("找回密码");
+		setTitle("设置密码");
 		nextStep.setText("下一步");
 	}
 	

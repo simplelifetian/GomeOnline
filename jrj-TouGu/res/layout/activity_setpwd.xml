@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#959595"
+    android:orientation="vertical"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="输入验证码，并设置密码、姓名"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        style="@style/BaseLayout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_line"
+        android:gravity="bottom"
+        android:paddingBottom="6dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="bottom" >
+
+            <com.gome.haoyuangong.views.ClearEditText
+                android:id="@+id/et_vcode"
+                style="@style/BaseEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="输入手机号"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/get_vcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_get_vcode"
+                android:gravity="center"
+                android:minEms="5"
+                android:padding="5dp"
+                android:text="获取验证码"
+                android:textColor="@drawable/selector_get_vcode"
+                android:textSize="@dimen/text_size_13" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        style="@style/BaseLayout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_line"
+        android:gravity="bottom"
+        android:paddingBottom="6dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="bottom" >
+
+            <com.gome.haoyuangong.views.ClearEditText
+                android:id="@+id/et_password"
+                style="@style/BaseEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="密码6-20位数字或字母"
+                android:inputType="text" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        style="@style/BaseLayout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_line"
+        android:gravity="bottom"
+        android:paddingBottom="6dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="bottom" >
+
+            <com.gome.haoyuangong.views.ClearEditText
+                android:id="@+id/et_name"
+                style="@style/BaseEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="密码6-20位数字或字母"
+                android:inputType="text" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp" >
+
+        <Button
+            android:id="@+id/nextstep"
+            style="@style/BaseButton"
+            android:layout_marginRight="8dp"
+            android:text="完成" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp" >
+
+    <RelativeLayout
+        style="@style/BaseLayout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            style="@style/BaseTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="注册可以帮助您开拓、管理、维护线下合作商户" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/BaseLayout"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|left"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:paddingBottom="6dp" >
+
+        <EditText
+            android:id="@+id/phoneinput"
+            style="@style/BaseEditText"
+            android:hint="请输入手机的号码"            
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:textColorHint="#C8C8C8" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center_vertical" >
+
+        <Button
+            android:id="@+id/nextstep"
+            style="@style/BaseButton"
+            android:background="#CC0015"
+            android:textColor="#fff"
+            android:text="下一步" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/BaseLayout"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            style="@style/BaseTextView"
+            android:layout_marginLeft="3dp"
+            android:text="我已经阅读并同意《国美好员工开通协议》" />
+    </RelativeLayout>
+
+</LinearLayout>
