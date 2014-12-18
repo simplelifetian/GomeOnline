@@ -60,7 +60,7 @@
                     android:orientation="horizontal" >
 
                     <RadioButton
-                        android:id="@+id/radioButton1"
+                        android:id="@+id/goods_i_sell"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -75,7 +75,7 @@
                         android:text="我销售的" />
 
                     <RadioButton
-                        android:id="@+id/radioButton2"
+                        android:id="@+id/goods_hot_rec"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -105,10 +105,10 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_marginRight="2dp"
-                    android:visibility="invisible"
                     android:background="@drawable/sousuo"
                     android:textColor="@drawable/title_text_color"
-                    android:textSize="@dimen/text_size_17" />
+                    android:textSize="@dimen/text_size_17"
+                    android:visibility="invisible" />
 
                 <com.gome.haoyuangong.views.ClickTextView
                     android:id="@+id/tianjia"
@@ -118,9 +118,14 @@
                     android:background="@drawable/tianjia"
                     android:textColor="@drawable/title_text_color"
                     android:textSize="@dimen/text_size_17" />
-
             </LinearLayout>
         </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/goods_isell_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
     </LinearLayout>
 
 </RelativeLayout>

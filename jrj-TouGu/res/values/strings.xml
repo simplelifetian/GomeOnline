@@ -44,6 +44,8 @@
     <string name="text_share">分享了一张优惠卷</string>
     <string name="text_subway">subway</string>
     <string name="text_buy">购买精选系列送饮料优惠券</string>
+    <string name="text_current_prosess">当前任务已完成%1$s</string>
+    <string name="text_results">完成以下任务即可获得相应现金奖励，马上行动吧！</string>
     
     
 

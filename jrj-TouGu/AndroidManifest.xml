@@ -41,7 +41,7 @@
             android:theme="@style/AppTheme"
             android:hardwareAccelerated="false" >
             <activity
-                android:name="com.gome.haoyuangong.activity.WaitingActivity"
+                android:name="com.gome.haoyuangong.activity.LoginActivity"
                 android:label="@string/app_name"
                 android:screenOrientation="portrait" 
                 android:theme="@style/AppTheme.FullScreen">
@@ -77,11 +77,16 @@
                 android:windowSoftInputMode="adjustUnspecified|stateUnspecified" >
             </activity>
             <activity
-                android:name="com.gome.haoyuangong.activity.LoginActivity"
+                android:name="com.gome.haoyuangong.activity.RegistApplyActivity"
                 android:screenOrientation="portrait"
-                android:launchMode="singleTask"
-                android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+                android:windowSoftInputMode="adjustUnspecified|stateUnspecified" >
             </activity>
+<!--             <activity -->
+<!--                 android:name="com.gome.haoyuangong.activity.LoginActivity" -->
+<!--                 android:screenOrientation="portrait" -->
+<!--                 android:launchMode="singleTask" -->
+<!--                 android:windowSoftInputMode="adjustUnspecified|stateHidden" > -->
+<!--             </activity> -->
             <activity
                 android:name="com.gome.haoyuangong.activity.FindPass1Activity"
                 android:screenOrientation="portrait"

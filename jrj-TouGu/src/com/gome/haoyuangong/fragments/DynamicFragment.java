@@ -1,7 +1,5 @@
 package com.gome.haoyuangong.fragments;
 
-import java.util.List;
-
 import com.gome.haoyuangong.R;
 
 import android.os.Bundle;

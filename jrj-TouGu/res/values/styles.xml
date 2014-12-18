@@ -39,7 +39,16 @@
         <item name="android:textSize">14sp</item>
 	    <item name="android:textColor">@color/color_key_process</item>
     </style>
+    
+    <style name="text_result_one">
+        <item name="android:textSize">12sp</item>
+	    <item name="android:textColor">@color/color_text_gray</item>
+    </style>
 
+    <style name="text_result_two">
+        <item name="android:textSize">10sp</item>
+	    <item name="android:textColor">@color/color_key_process</item>
+    </style>
     
     
     
